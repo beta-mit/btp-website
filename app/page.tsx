@@ -1,103 +1,207 @@
-import Image from "next/image";
+"use client"
 
-export default function Home() {
+import type React from "react"
+import { useState, useRef, useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
+
+export default function HomePage() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [isHovering, setIsHovering] = useState(false)
+  const [hoveredSection, setHoveredSection] = useState<string | null>(null)
+  const heroRef = useRef<HTMLDivElement>(null)
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (heroRef.current) {
+      const rect = heroRef.current.getBoundingClientRect()
+      setMousePosition({
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top,
+      })
+    }
+  }
+
+  const navigationSections = [
+    {
+      title: "About",
+      href: "/about",
+      image: "/placeholder.svg?height=400&width=600",
+    },
+    {
+      title: "Brothers",
+      href: "/brothers",
+      image: "/placeholder.svg?height=400&width=600",
+    },
+    {
+      title: "Benefits",
+      href: "/benefits",
+      image: "/placeholder.svg?height=400&width=600",
+    },
+    {
+      title: "Rush",
+      href: "/rush",
+      image: "/placeholder.svg?height=400&width=600",
+    },
+    {
+      title: "Housing",
+      href: "/housing",
+      image: "/placeholder.svg?height=400&width=600",
+    },
+    {
+      title: "Alumni",
+      href: "/alumni",
+      image: "/placeholder.svg?height=400&width=600",
+    },
+  ]
+
+  const getImageScale = (currentIndex: number, hoveredIndex: number | null) => {
+    if (hoveredIndex === null) return "scale-100"
+    if (currentIndex === hoveredIndex) return "scale-110 z-10"
+
+    // Only shrink adjacent/surrounding images
+    const isAdjacent = Math.abs(currentIndex - hoveredIndex) === 1
+    const isVerticallyAdjacent = Math.abs(currentIndex - hoveredIndex) === 3 // For 3-column grid
+
+    if (isAdjacent || isVerticallyAdjacent) {
+      return "scale-90"
+    }
+
+    return "scale-100"
+  }
+
+  // Add intersection observer for smooth animations
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in-up")
+        }
+      })
+    }, observerOptions)
+
+    const sections = document.querySelectorAll("section")
+    sections.forEach((section) => observer.observe(section))
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative h-screen overflow-hidden bg-white">
+        <div
+          ref={heroRef}
+          className="relative w-full h-full cursor-none"
+          onMouseMove={handleMouseMove}
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
+          {/* Main Hero Image */}
+          <Image
+            src="/placeholder.svg?height=1080&width=1920"
+            alt="Beta Theta Pi Brothers"
+            fill
+            className="object-cover"
+            priority
+          />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* Animated Overlay Image (visible through magnifying glass) */}
+          <div
+            className="absolute inset-0 opacity-0 transition-opacity duration-300"
+            style={{
+              clipPath: isHovering
+                ? `circle(100px at ${mousePosition.x}px ${mousePosition.y}px)`
+                : "circle(0px at 50% 50%)",
+              transition: "clip-path 0.1s ease-out",
+            }}
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/placeholder.svg?height=1080&width=1920"
+              alt="Animated Beta Theta Pi Brothers"
+              fill
+              className="object-cover opacity-100 saturate-150 contrast-110"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#F99FC9]/20 to-[#69B3E7]/20"></div>
+          </div>
+
+          {/* Magnifying Glass Cursor */}
+          {isHovering && (
+            <div
+              className="absolute pointer-events-none z-10 w-8 h-8 border-4 border-[#002F6C] rounded-full bg-white/20 backdrop-blur-sm animate-shake"
+              style={{
+                left: mousePosition.x - 16,
+                top: mousePosition.y - 16,
+                transform: "scale(1.2)",
+                boxShadow: "0 0 20px rgba(0, 47, 108, 0.5)",
+              }}
+            >
+              <div className="absolute inset-2 border border-[#002F6C] rounded-full"></div>
+            </div>
+          )}
+
+          {/* Hero Text Overlay */}
+          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+            <div className="text-center text-white px-4">
+              <h1
+                className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider animate-bounce-crazy"
+                style={{ fontFamily: "serif" }}
+              >
+                BETA UPSILON CHAPTER
+              </h1>
+              <h2
+                className="text-2xl md:text-4xl font-semibold tracking-widest text-[#69B3E7] animate-wiggle"
+                style={{ fontFamily: "sans-serif" }}
+              >
+                BETA THETA PI
+              </h2>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Navigation Grid */}
+      <section className="w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-auto">
+          {navigationSections.map((section, index) => (
+            <Link
+              key={section.title}
+              href={section.href}
+              className="relative group cursor-pointer overflow-hidden block"
+              onMouseEnter={() => setHoveredSection(section.title)}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <div
+                className={`
+                  relative h-64 md:h-80 lg:h-96 overflow-hidden transition-all duration-500 ease-out
+                  ${getImageScale(index, hoveredSection ? navigationSections.findIndex((s) => s.title === hoveredSection) : null)}
+                `}
+              >
+                <Image src={section.image || "/placeholder.svg"} alt={section.title} fill className="object-cover" />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300"></div>
+
+                {/* Text Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center text-white px-4">
+                    <h3
+                      className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider"
+                      style={{ fontFamily: "serif" }}
+                    >
+                      {section.title.toUpperCase()}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </div>
-  );
+  )
 }
