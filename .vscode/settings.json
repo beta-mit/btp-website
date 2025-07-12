@@ -1,0 +1,21 @@
+{
+  "files.exclude": {
+    "package.json": true,
+    "package-lock.json": true,
+    "tsconfig.json": true,
+    "next.config.ts": true,
+    "postcss.config.mjs": true,
+    "eslint.config.mjs": true,
+    "components.json": true,
+    "next-env.d.ts": true,
+    ".gitignore": true,
+    "node_modules": true,
+    ".next": true,
+    ".git": true
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.tsx": "${capture}.module.css, ${capture}.css",
+    "*.ts": "${capture}.spec.ts, ${capture}.test.ts"
+  }
+}

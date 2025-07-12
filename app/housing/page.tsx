@@ -128,7 +128,7 @@ export default function HousingPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/placeholder.svg"
                 alt="Beta Theta Pi Chapter House"
                 width={600}
                 height={500}
@@ -162,7 +162,7 @@ export default function HousingPage() {
                 <Card
                   key={amenity.title}
                   className={`
-                    p-6 text-center bg-white/90 backdrop-blur-sm border-2 border-[#69B3E7] 
+                    p-6 text-center bg-white/90 backdrop-blur-sm border-2 border-[#69B3E7]
                     hover:shadow-xl transition-all duration-300 group
                     ${index % 2 === 0 ? "transform rotate-1" : "transform -rotate-1"}
                     hover:rotate-0 hover:scale-105

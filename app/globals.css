@@ -1,6 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Custom Beta Theta Pi utilities */
+@utility beta-blue-294 {
+  color: var(--beta-blue-294);
+}
+
+@utility bg-beta-blue-294 {
+  background-color: var(--beta-blue-294);
+}
+
+@utility border-beta-blue-294 {
+  border-color: var(--beta-blue-294);
+}
+
+@utility text-beta-blue-294 {
+  color: var(--beta-blue-294);
+}
+
+@utility text-beta-blue-293 {
+  color: var(--beta-blue-293);
+}
+
+@utility text-beta-blue-292 {
+  color: var(--beta-blue-292);
+}
+
+@utility bg-beta-blue-293 {
+  background-color: var(--beta-blue-293);
+}
+
+@utility bg-beta-blue-292 {
+  background-color: var(--beta-blue-292);
+}
+
+@utility border-beta-blue-292 {
+  border-color: var(--beta-blue-292);
+}
+
+@utility shadow-beta {
+  box-shadow: 0 4px 20px rgba(0, 47, 108, 0.15);
+}
+
+@utility shadow-beta-lg {
+  box-shadow: 0 10px 40px rgba(0, 47, 108, 0.2);
+}
+
+@utility font-serif {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+@utility font-sans {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+@utility font-body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* shadcn/ui utilities */
+@utility text-foreground {
+  color: hsl(var(--foreground));
+}
+
+@utility bg-background {
+  background-color: hsl(var(--background));
+}
+
+@utility text-muted-foreground {
+  color: hsl(var(--muted-foreground));
+}
+
+@utility bg-card {
+  background-color: hsl(var(--card));
+}
+
+@utility text-card-foreground {
+  color: hsl(var(--card-foreground));
+}
 
 @layer base {
   :root {
@@ -83,10 +159,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px; /* Account for header height */

@@ -13,7 +13,7 @@ export default function BrothersPage() {
       major: "Business Administration",
       year: "Senior",
       bio: "Leading our chapter with vision and dedication to excellence.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/placeholder.svg",
     },
     {
       name: "Mike Johnson",
@@ -21,7 +21,7 @@ export default function BrothersPage() {
       major: "Engineering",
       year: "Junior",
       bio: "Supporting our president and managing internal operations.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/placeholder.svg",
     },
     {
       name: "David Wilson",
@@ -29,7 +29,7 @@ export default function BrothersPage() {
       major: "Finance",
       year: "Junior",
       bio: "Managing our chapter's financial health and planning.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/placeholder.svg",
     },
     {
       name: "Chris Brown",
@@ -37,7 +37,7 @@ export default function BrothersPage() {
       major: "Communications",
       year: "Sophomore",
       bio: "Keeping our records and facilitating communication.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/placeholder.svg",
     },
   ]
 
@@ -46,37 +46,37 @@ export default function BrothersPage() {
       name: "Alex Thompson",
       major: "Computer Science",
       year: "Senior",
-      image: "/placeholder.svg?height=250&width=250",
+      image: "/placeholder.svg",
     },
     {
       name: "Ryan Davis",
       major: "Psychology",
       year: "Junior",
-      image: "/placeholder.svg?height=250&width=250",
+      image: "/placeholder.svg",
     },
     {
       name: "Kevin Martinez",
       major: "Pre-Med",
       year: "Sophomore",
-      image: "/placeholder.svg?height=250&width=250",
+      image: "/placeholder.svg",
     },
     {
       name: "Tyler Anderson",
       major: "Marketing",
       year: "Junior",
-      image: "/placeholder.svg?height=250&width=250",
+      image: "/placeholder.svg",
     },
     {
       name: "Brandon Lee",
       major: "Political Science",
       year: "Senior",
-      image: "/placeholder.svg?height=250&width=250",
+      image: "/placeholder.svg",
     },
     {
       name: "Jordan Taylor",
       major: "Economics",
       year: "Sophomore",
-      image: "/placeholder.svg?height=250&width=250",
+      image: "/placeholder.svg",
     },
   ]
 
@@ -175,7 +175,7 @@ export default function BrothersPage() {
               <Card
                 key={brother.name}
                 className={`
-                  overflow-hidden bg-white/90 backdrop-blur-sm border-2 border-[#69B3E7] 
+                  overflow-hidden bg-white/90 backdrop-blur-sm border-2 border-[#69B3E7]
                   hover:shadow-xl transition-all duration-300 group
                   ${index % 2 === 0 ? "transform rotate-1" : "transform -rotate-1"}
                   hover:rotate-0

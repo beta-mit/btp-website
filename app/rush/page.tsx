@@ -68,21 +68,18 @@ export default function RushPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1
-            className="text-4xl md:text-6xl font-bold mb-6 text-[#002F6C] tracking-wider"
-            style={{ fontFamily: "serif" }}
+            className="text-4xl md:text-6xl font-bold mb-6 text-beta-blue-294 tracking-wider font-serif"
           >
             JOIN OUR BROTHERHOOD
           </h1>
           <p
-            className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8"
-            style={{ fontFamily: "Arial, sans-serif" }}
+            className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8 font-body"
           >
             Rush is your opportunity to discover what Beta Theta Pi is all about and see if our brotherhood is the right
             fit for you. We're excited to meet you!
           </p>
           <Button
-            className="bg-[#002F6C] hover:bg-[#003DA5] text-white font-bold px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
-            style={{ fontFamily: "sans-serif" }}
+            className="bg-beta-blue-294 hover:bg-beta-blue-293 text-white font-bold px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300 font-sans"
           >
             REGISTER FOR RUSH
           </Button>
@@ -94,25 +91,24 @@ export default function RushPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2
-              className="text-3xl md:text-4xl font-bold mb-6 text-[#002F6C] tracking-wider"
-              style={{ fontFamily: "serif" }}
+              className="text-3xl md:text-4xl font-bold mb-6 text-beta-blue-294 tracking-wider font-serif"
             >
               THE RUSH PROCESS
             </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto" style={{ fontFamily: "Arial, sans-serif" }}>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto font-body">
               Our rush process is designed to be welcoming, informative, and fun. Here's what to expect.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <Card className="p-8 text-center bg-white border-2 border-[#69B3E7] hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-[#002F6C] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            <Card className="p-8 text-center bg-white border-2 border-beta-blue-292 hover:shadow-beta-lg transition-all duration-300">
+              <div className="w-16 h-16 bg-beta-blue-294 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 1
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#002F6C] tracking-wider" style={{ fontFamily: "sans-serif" }}>
+              <h3 className="text-xl font-bold mb-4 text-beta-blue-294 tracking-wider font-sans">
                 ATTEND EVENTS
               </h3>
-              <p className="text-gray-700 leading-relaxed" style={{ fontFamily: "Arial, sans-serif" }}>
+              <p className="text-gray-700 leading-relaxed font-body">
                 Come to our rush events to meet brothers, learn about our values, and experience our brotherhood
                 firsthand.
               </p>
@@ -169,7 +165,7 @@ export default function RushPage() {
                 <Card
                   key={event.title}
                   className={`
-                    overflow-hidden bg-white/90 backdrop-blur-sm border-2 border-[#69B3E7] 
+                    overflow-hidden bg-white/90 backdrop-blur-sm border-2 border-[#69B3E7]
                     hover:shadow-xl transition-all duration-300 group
                     ${index % 2 === 0 ? "transform rotate-1" : "transform -rotate-1"}
                     hover:rotate-0

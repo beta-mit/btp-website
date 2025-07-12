@@ -14,7 +14,7 @@ export default function AlumniPage() {
       position: "CEO, Tech Innovations Inc.",
       location: "San Francisco, CA",
       achievement: "Built a $500M technology company",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/placeholder.svg",
     },
     {
       name: "Dr. Michael Chen",
@@ -22,7 +22,7 @@ export default function AlumniPage() {
       position: "Chief of Surgery, Metro Hospital",
       location: "Chicago, IL",
       achievement: "Leading cardiac surgeon and medical researcher",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/placeholder.svg",
     },
     {
       name: "James Rodriguez",
@@ -30,7 +30,7 @@ export default function AlumniPage() {
       position: "Partner, Rodriguez & Associates Law",
       location: "New York, NY",
       achievement: "Prominent civil rights attorney",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/placeholder.svg",
     },
   ]
 
@@ -170,7 +170,7 @@ export default function AlumniPage() {
               <Card
                 key={alumnus.name}
                 className={`
-                  overflow-hidden bg-white/90 backdrop-blur-sm border-2 border-[#69B3E7] 
+                  overflow-hidden bg-white/90 backdrop-blur-sm border-2 border-[#69B3E7]
                   hover:shadow-xl transition-all duration-300 group
                   ${index === 1 ? "transform -rotate-1" : index === 2 ? "transform rotate-1" : ""}
                   hover:rotate-0
