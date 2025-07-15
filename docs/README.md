@@ -81,7 +81,7 @@ btp-website/
 │   ├── brothers/          # Brothers page
 │   ├── housing/           # Housing page
 │   ├── rush/              # Rush information page
-│   ├── ClientLayout.tsx   # Client-side layout wrapper
+│   ├── RootLayout.tsx     # Root layout wrapper component
 │   ├── globals.css        # Global styles
 │   ├── layout.tsx         # Root layout with metadata
 │   └── page.tsx           # Homepage

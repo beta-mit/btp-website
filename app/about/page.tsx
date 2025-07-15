@@ -37,31 +37,31 @@ export default function AboutPage() {
       year: "1839",
       title: "The Founding of Beta Theta Pi",
       description: "Beta Theta Pi, commonly known as Beta, was founded on August 8, 1839, at Miami University in Oxford, Ohio. Eight students, seeking a new kind of fraternal organization, established Beta Theta Pi with a vision of unity, energy, and selfless devotion. The fraternity quickly became the oldest of the three Miami Triad fraternities, alongside Phi Delta Theta and Sigma Chi. The founders—John Reily Knox, Samuel Taylor Marshall, David Linton, James George Smith, Charles Henry Hardin, John Holt Duncan, Michael Clarkson Ryan, and Thomas Boston Gordon—set forth ideals that would guide generations of Betas.",
-      image: "/other-images/btp-flag.jpg"
+      image: "/about/btp-flag.jpg"
     },
     {
       year: "1850-1900",
       title: "Pioneering Spirit and Fraternal Firsts",
       description: "During this period, Beta Theta Pi became known for its entrepreneurial and leadership spirit, earning the titles \"Pioneering Fraternity\" and \"Leadership Fraternity.\" By 1850, Beta had already achieved several fraternal firsts, such as founding the first college fraternity west of the Allegheny Mountains and hosting the first General Convention in 1848. Many of Beta's enduring symbols and traditions, including its badge, coat of arms, and the adoption of \"delicate shades of pink blue\" as its colors, took shape during these years. Despite facing hostility from college authorities and being required to operate in secrecy, Beta Theta Pi worked to instill confidence in its noble ambitions. In 1879, Beta became the first fraternity to publish an open constitution, proclaiming its objects of moral and social culture, unity, and the cultivation of intellect and friendship.",
-      image: "/other-images/btp-1850-to-1900.jpg"
+      image: "/about/btp-1850-to-1900.jpg"
     },
     {
       year: "1900-1950",
       title: "The Beta Spirit and National Growth",
       description: "This era is best defined by the \"Beta Spirit\"—a unique sense of warmth, strength, and enduring fraternity. Beta Theta Pi celebrated major milestones, such as having four members serve on the U.S. Supreme Court and hosting a centennial celebration. The Founders Fund, which would evolve into the Beta Theta Pi Foundation, was established to provide scholarships and leadership programming. The period was also marked by challenges, including two World Wars that threatened the existence of many chapters. The Toronto Chapter Fund, created in 1916, became a model for supporting chapters in crisis. In 1913, the Beta Upsilon Chapter was established at MIT, initially meeting in various locations before acquiring its first dedicated house.",
-      image: "/other-images/btp-1900-to-1950.jpg"
+      image: "/about/btp-1900-to-1950.jpg"
     },
     {
       year: "1950-2000",
       title: "Modernization and New Traditions",
       description: "Beta Theta Pi continued to expand and modernize, with notable events such as the initiation of the fraternity's first Black member, Bill Lowry, and the construction of the national Administrative Office in Oxford, Ohio. The Beta Leadership Fund was established, beginning a tradition of funding leadership programs for members. During this time, Beta Upsilon experienced significant changes, moving between several houses to accommodate its growing membership and eventually acquiring an annex property. The chapter adapted to the evolving culture of fraternity life, balancing tradition with the need for renewal and excellence.",
-      image: "/other-images/btp-1950-to-2000.jpg"
+      image: "/about/btp-1950-to-2000.jpg"
     },
     {
       year: "2000-Present",
       title: "A Legacy of Brotherhood",
       description: "Today, Beta Upsilon stands as a proud chapter of Beta Theta Pi, upholding nearly two centuries of tradition while embracing the challenges and opportunities of modern campus life. The chapter's history is reflected in its homes, its members, and its ongoing commitment to the values set forth in 1839. Beta Upsilon continues to be a place where brotherhood, leadership, and service thrive, leading by example through community service and academic achievement.",
-      image: "/house.jpg"
+      image: "/about/house.jpg"
     }
   ]
 

@@ -31,45 +31,7 @@ export const NAVIGATION_ITEMS = [
   { title: "Alumni", href: "https://beta-mit.org/" },
 ] as const
 
-export const RUSH_TIPS = [
-  "Be yourself - authenticity is what we value most",
-  "Ask questions - we want you to make an informed decision",
-  "Attend multiple events to get a full picture of our brotherhood",
-  "Dress appropriately for each event (we'll let you know the dress code)",
-  "Bring friends who might be interested - rush is more fun together",
-  "Follow up with brothers you connect with",
-] as const
 
-export const ROOM_PRICING = {
-  single: {
-    type: "Single Room",
-    price: "$800/month",
-    description: "Private bedroom with shared bathroom facilities",
-    features: ["Private bedroom", "Shared bathroom", "Desk and storage", "All utilities included"],
-  },
-  double: {
-    type: "Double Room",
-    price: "$600/month",
-    description: "Shared bedroom with roommate and bathroom facilities",
-    features: ["Shared bedroom", "Shared bathroom", "Individual desk space", "All utilities included"],
-  },
-  suite: {
-    type: "Suite Style",
-    price: "$900/month",
-    description: "Private bedroom with shared living area and bathroom",
-    features: ["Private bedroom", "Shared living area", "Private bathroom", "Mini-fridge included"],
-  },
-} as const
-
-export const ALUMNI_STATS = {
-  livingAlumni: "2,500+",
-  states: "50",
-  careerSuccess: "85%",
-  annualGiving: "$2.5M",
-} as const
-
-// Default placeholder image
-export const DEFAULT_IMAGE = "/placeholder.svg"
 
 // Common CSS class combinations
 export const COMMON_CLASSES = {

@@ -10,77 +10,77 @@ export default function BrothersPage() {
       name: "Alex Meier",
       major: "Aeronautics and Astronautics (Engineering); Physics (Flexible)",
       classYear: "2026",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "President"
     },
     "Michael Serrano": {
       name: "Michael Serrano",
       major: "Physics; Computer Science, Economics, and Data Science",
       classYear: "2026",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "VP External"
     },
     "William Nolan": {
       name: "William Nolan",
       major: "Physics",
       classYear: "Graduate Student",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "VP Internal"
     },
     "Johnny Peng": {
       name: "Johnny Peng",
       major: "Mechanical Engineering",
       classYear: "2028",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "VP Finance"
     },
     "Raul Campos": {
       name: "Raul Campos",
       major: "Artificial Intelligence and Decision Making; Electrical Engineering and Computer Science",
       classYear: "2027",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "VP House Management"
     },
     "Carlos Lopez": {
       name: "Carlos Lopez",
       major: "Mechanical Engineering with Concentration in Controls, Instrumentation, and Robotics",
       classYear: "2028",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "VP Brotherhood"
     },
     "Enrique Hernandez": {
       name: "Enrique Hernandez",
       major: "Aeronautics and Astronautics",
       classYear: "2027",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "VP Communications"
     },
     "Matvey Borodin": {
       name: "Matvey Borodin",
       major: "Electrical Engineering and Computer Science; Mathematics",
       classYear: "2028",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "VP Member Education"
     },
     "Alberto Mora Trinidad": {
       name: "Alberto Mora Trinidad",
       major: "Chemistry and Biology",
       classYear: "2027",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "VP Programming"
     },
         "Amir Alsad": {
        name: "Amir Alsad",
        major: "Physics (Flexible)",
        classYear: "2028",
-       image: "/amir.JPEG",
+       image: "/brothers/amir.JPEG",
        position: "Co-VP Recruitment"
      },
     "Jeanpaul Sanchez-Moreno": {
       name: "Jeanpaul Sanchez-Moreno",
       major: "Mechanical Engineering",
       classYear: "2028",
-      image: "/placeholder.svg",
+      image: "/shared/placeholder.svg",
       position: "Co-VP Recruitment"
     },
          // Non-executive brothers
@@ -88,91 +88,91 @@ export default function BrothersPage() {
        name: "Xander Backus",
        major: "Artificial Intelligence and Decision Making; Mathematics",
        classYear: "2026",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Luis Turino Zellek": {
        name: "Luis Turino Zellek",
        major: "Electrical Engineering and Computer Science; Mathematics",
        classYear: "2026",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Vishruth Konakanchi": {
        name: "Vishruth Konakanchi",
        major: "Computer Science and Engineering",
        classYear: "2026",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Colin Clark": {
        name: "Colin Clark",
        major: "Electrical Science and Engineering; Physics (Flexible)",
        classYear: "2026",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Tom Nguyen": {
        name: "Tom Nguyen",
        major: "Mechanical Engineering with Concentration in Controls, Instrumentation, and Robotics",
        classYear: "2026",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Ryan Duarte": {
        name: "Ryan Duarte",
        major: "Mechanical Engineering",
        classYear: "2027",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Max Misterka": {
        name: "Max Misterka",
        major: "Mathematics with Computer Science; Chemistry or Physics",
        classYear: "2027",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Michael Georgievski": {
        name: "Michael Georgievski",
        major: "Physics; Computer Science and Engineering; Mathematics",
        classYear: "2027",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Asa Paparo": {
        name: "Asa Paparo",
        major: "Computer Science and Engineering",
        classYear: "2028",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Angelo Farfan": {
        name: "Angelo Farfan",
        major: "Mathematics; Artificial Intelligence and Decision Making",
        classYear: "2028",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Guy Gong": {
        name: "Guy Gong",
        major: "Mechanical Engineering",
        classYear: "2028",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Yrwin Batan": {
        name: "Yrwin Batan",
        major: "Computer Science, Economics, and Data Science",
        classYear: "2028",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      },
      "Jasper Lee": {
        name: "Jasper Lee",
        major: "Mechanical Engineering; Physics",
        classYear: "2028",
-       image: "/placeholder.svg",
+       image: "/shared/placeholder.svg",
        position: undefined
      }
   }
@@ -236,7 +236,7 @@ export default function BrothersPage() {
               >
                 <div className="relative h-48 mb-4">
                   <Image
-                    src={member.image || "/placeholder.svg"}
+                    src={member.image || "/shared/placeholder.svg"}
                     alt={member.name}
                     fill
                     className="object-cover"

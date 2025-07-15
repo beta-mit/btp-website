@@ -97,7 +97,7 @@ export default function BenefitsPage() {
               <div className="text-center">
                 <div className="mb-4 mx-auto w-48 h-48 relative overflow-hidden rounded-lg">
                   <img
-                    src="/other-images/charles-koch.jpg"
+                    src="/benefits/charles-koch.jpg"
                     alt="Charles Koch"
                     className="w-full h-full object-cover object-top"
                   />
@@ -111,7 +111,7 @@ export default function BenefitsPage() {
               <div className="text-center">
                 <div className="mb-4 mx-auto w-48 h-48 relative overflow-hidden rounded-lg">
                   <img
-                    src="/other-images/david-koch.jpg"
+                    src="/benefits/david-koch.jpg"
                     alt="David Koch"
                     className="w-full h-full object-cover object-top"
                   />
@@ -125,7 +125,7 @@ export default function BenefitsPage() {
               <div className="text-center">
                 <div className="mb-4 mx-auto w-48 h-48 relative overflow-hidden rounded-lg">
                   <img
-                    src="/other-images/kenneth-cameron.jpg"
+                    src="/benefits/kenneth-cameron.jpg"
                     alt="Kenneth D. Cameron"
                     className="w-full h-full object-cover"
                   />
@@ -150,7 +150,7 @@ export default function BenefitsPage() {
               <div className="text-center">
                 <div className="mb-4 mx-auto w-48 h-48 relative overflow-hidden rounded-lg">
                   <img
-                    src="/other-images/john-warnock.jpg"
+                    src="/benefits/john-warnock.jpg"
                     alt="John Warnock"
                     className="w-full h-full object-cover object-right"
                   />
@@ -164,7 +164,7 @@ export default function BenefitsPage() {
               <div className="text-center">
                 <div className="mb-4 mx-auto w-48 h-48 relative overflow-hidden rounded-lg">
                   <img
-                    src="/other-images/bill-bowerman.jpg"
+                    src="/benefits/bill-bowerman.jpg"
                     alt="Bill Bowerman"
                     className="w-full h-full object-cover object-right"
                   />
@@ -178,7 +178,7 @@ export default function BenefitsPage() {
               <div className="text-center">
                 <div className="mb-4 mx-auto w-48 h-48 relative overflow-hidden rounded-lg">
                   <img
-                    src="/other-images/sam-walton.jpg"
+                    src="/benefits/sam-walton.jpg"
                     alt="Sam Walton"
                     className="w-full h-full object-cover object-right"
                   />

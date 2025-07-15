@@ -35,7 +35,7 @@ export function Footer() {
           <Link href="/" className="flex items-center group">
             <div className="relative mr-3 hover:scale-110 transition-transform duration-300">
               <Image
-                src="/btp-logo.png"
+                src="/shared/btp-logo.png"
                 alt="Beta Theta Pi Logo"
                 width={60}
                 height={60}

@@ -7,8 +7,8 @@ import { Home, Users, Wifi, Car, Utensils, Gamepad2, Book, Dumbbell, MapPin } fr
 
 export default function HousingPage() {
   const houseImages = [
-    'a.jpg', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpg', 'f.jpg', 'g.jpg', 'h.jpg', 'i.jpg', 'j.jpg',
-    'k.jpg', 'l.jpg', 'm.jpg', 'n.jpg', 'o.jpg', 'p.jpg', 'q.jpg', 'r.jpg', 's.jpg', 't.jpg'
+    'housing/a.jpg', 'housing/b.jpg', 'housing/c.jpg', 'housing/d.jpg', 'housing/e.jpg', 'housing/f.jpg', 'housing/g.jpg', 'housing/h.jpg', 'housing/i.jpg', 'housing/j.jpg',
+    'housing/k.jpg', 'housing/l.jpg', 'housing/m.jpg', 'housing/n.jpg', 'housing/o.jpg', 'housing/p.jpg', 'housing/q.jpg', 'housing/r.jpg', 'housing/s.jpg', 'housing/t.jpg'
   ]
 
   return (

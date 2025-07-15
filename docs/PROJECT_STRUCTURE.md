@@ -32,7 +32,7 @@ app/
 │   └── page.tsx           # /housing page component
 ├── rush/                   # Rush information route
 │   └── page.tsx           # /rush page component
-├── ClientLayout.tsx        # Client-side layout wrapper
+├── RootLayout.tsx          # Root layout wrapper component
 ├── globals.css            # Global styles and Tailwind directives
 ├── layout.tsx             # Root layout with metadata
 ├── page.tsx               # Homepage (/) component
@@ -46,7 +46,7 @@ app/
 - **Features**: Metadata configuration, SEO optimization
 - **Wraps**: All pages with common layout elements
 
-#### `ClientLayout.tsx`
+#### `RootLayout.tsx`
 - **Purpose**: Client-side layout with interactive features
 - **Features**: Header, footer, smooth scrolling, animations
 - **Usage**: Wraps page content with navigation and layout

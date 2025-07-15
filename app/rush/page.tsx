@@ -23,7 +23,7 @@ export default function RushPage() {
             {/* Left side - Image */}
             <div className="order-2 lg:order-1">
               <img
-                src="/2020-american.jpg"
+                src="/rush/2020-american.jpg"
                 alt="Beta Theta Pi brothers"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

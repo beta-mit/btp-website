@@ -25,32 +25,32 @@ export default function HomePage() {
     {
       title: "About",
       href: "/about",
-      image: "/btp-memorabilia.jpg",
+      image: "/homepage/btp-memorabilia.jpg",
     },
     {
       title: "Brothers",
       href: "/brothers",
-      image: "/old-brotherhood-1.jpg",
+      image: "/homepage/old-brotherhood-1.jpg",
     },
     {
       title: "Benefits",
       href: "/benefits",
-      image: "/2025-formal-1.jpg",
+      image: "/homepage/2025-formal-1.jpg",
     },
     {
       title: "Rush",
       href: "/rush",
-      image: "/2025-paintball.jpg",
+      image: "/homepage/2025-paintball.jpg",
     },
     {
       title: "Housing",
       href: "/housing",
-      image: "/house.jpg",
+      image: "/homepage/house.jpg",
     },
     {
       title: "Alumni",
       href: "https://beta-mit.org/",
-      image: "/old-graduation.jpg",
+      image: "/homepage/old-graduation.jpg",
     },
   ]
 
@@ -96,7 +96,7 @@ export default function HomePage() {
         >
           {/* Main Hero Image */}
           <Image
-            src="/2025-induction-1.jpg"
+            src="/homepage/2025-induction-1.jpg"
             alt="Beta Theta Pi Brothers"
             fill
             className="object-cover"
@@ -114,7 +114,7 @@ export default function HomePage() {
             }}
           >
             <Image
-              src="/2025-induction-1-anime.png"
+              src="/homepage/2025-induction-1-anime.png"
               alt="Animated Beta Theta Pi Brothers"
               fill
               className="object-cover opacity-100 saturate-150 contrast-110"
@@ -158,7 +158,7 @@ export default function HomePage() {
                 `}
               >
                 <Image
-                  src={section.image || "/placeholder.svg"}
+                  src={section.image || "/shared/placeholder.svg"}
                   alt={section.title}
                   fill
                   className={`object-cover ${section.title === "Alumni" ? "object-top" : ""}`}

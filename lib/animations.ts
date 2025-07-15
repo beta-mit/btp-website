@@ -4,11 +4,7 @@ import { cn } from "@/lib/utils"
 
 export const animations = {
   // Entrance animations
-  fadeIn: "animate-fade-in",
-  slideUp: "animate-slide-up",
-  bounce: "animate-bounce-crazy",
-  wiggle: "animate-wiggle",
-  shake: "animate-shake",
+  fadeInUp: "animate-fade-in-up",
 
   // Hover animations
   scaleHover: "hover:scale-105 transform transition-transform duration-300",
