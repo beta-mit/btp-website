@@ -22,7 +22,7 @@ Beta Theta Pi is one of the oldest college fraternities in North America, founde
 - **Benefits**: Advantages of joining Beta Theta Pi
 - **Rush**: Information for prospective members
 - **Housing**: Chapter house details and amenities
-- **Alumni**: Alumni network and connections
+- **Alumni**: Redirects to external alumni website (https://beta-mit.org/)
 
 ## 🛠️ Technology Stack
 
@@ -77,7 +77,6 @@ Beta Theta Pi is one of the oldest college fraternities in North America, founde
 btp-website/
 ├── app/                    # Next.js App Router pages
 │   ├── about/             # About page
-│   ├── alumni/            # Alumni page
 │   ├── benefits/          # Benefits page
 │   ├── brothers/          # Brothers page
 │   ├── housing/           # Housing page

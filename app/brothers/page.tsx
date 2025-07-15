@@ -1,264 +1,324 @@
 "use client"
 
 import Image from "next/image"
-import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { GraduationCap } from "lucide-react"
 
 export default function BrothersPage() {
-  const executiveBoard = [
-    {
-      name: "John Smith",
-      position: "President",
-      major: "Business Administration",
-      year: "Senior",
-      bio: "Leading our chapter with vision and dedication to excellence.",
+  // Brothers Database - Single source of truth
+  const brothersDatabase = {
+    "Alex Meier": {
+      name: "Alex Meier",
+      major: "Aeronautics and Astronautics (Engineering); Physics (Flexible)",
+      classYear: "2026",
       image: "/placeholder.svg",
+      position: "President"
     },
-    {
-      name: "Mike Johnson",
-      position: "Vice President",
-      major: "Engineering",
-      year: "Junior",
-      bio: "Supporting our president and managing internal operations.",
+    "Michael Serrano": {
+      name: "Michael Serrano",
+      major: "Physics; Computer Science, Economics, and Data Science",
+      classYear: "2026",
       image: "/placeholder.svg",
+      position: "VP External"
     },
-    {
-      name: "David Wilson",
-      position: "Treasurer",
-      major: "Finance",
-      year: "Junior",
-      bio: "Managing our chapter's financial health and planning.",
+    "William Nolan": {
+      name: "William Nolan",
+      major: "Physics",
+      classYear: "Graduate Student",
       image: "/placeholder.svg",
+      position: "VP Internal"
     },
-    {
-      name: "Chris Brown",
-      position: "Secretary",
-      major: "Communications",
-      year: "Sophomore",
-      bio: "Keeping our records and facilitating communication.",
+    "Johnny Peng": {
+      name: "Johnny Peng",
+      major: "Mechanical Engineering",
+      classYear: "2028",
       image: "/placeholder.svg",
+      position: "VP Finance"
     },
+    "Raul Campos": {
+      name: "Raul Campos",
+      major: "Artificial Intelligence and Decision Making; Electrical Engineering and Computer Science",
+      classYear: "2027",
+      image: "/placeholder.svg",
+      position: "VP House Management"
+    },
+    "Carlos Lopez": {
+      name: "Carlos Lopez",
+      major: "Mechanical Engineering with Concentration in Controls, Instrumentation, and Robotics",
+      classYear: "2028",
+      image: "/placeholder.svg",
+      position: "VP Brotherhood"
+    },
+    "Enrique Hernandez": {
+      name: "Enrique Hernandez",
+      major: "Aeronautics and Astronautics",
+      classYear: "2027",
+      image: "/placeholder.svg",
+      position: "VP Communications"
+    },
+    "Matvey Borodin": {
+      name: "Matvey Borodin",
+      major: "Electrical Engineering and Computer Science; Mathematics",
+      classYear: "2028",
+      image: "/placeholder.svg",
+      position: "VP Member Education"
+    },
+    "Alberto Mora Trinidad": {
+      name: "Alberto Mora Trinidad",
+      major: "Chemistry and Biology",
+      classYear: "2027",
+      image: "/placeholder.svg",
+      position: "VP Programming"
+    },
+        "Amir Alsad": {
+       name: "Amir Alsad",
+       major: "Physics (Flexible)",
+       classYear: "2028",
+       image: "/amir.JPEG",
+       position: "Co-VP Recruitment"
+     },
+    "Jeanpaul Sanchez-Moreno": {
+      name: "Jeanpaul Sanchez-Moreno",
+      major: "Mechanical Engineering",
+      classYear: "2028",
+      image: "/placeholder.svg",
+      position: "Co-VP Recruitment"
+    },
+         // Non-executive brothers
+     "Xander Backus": {
+       name: "Xander Backus",
+       major: "Artificial Intelligence and Decision Making; Mathematics",
+       classYear: "2026",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Luis Turino Zellek": {
+       name: "Luis Turino Zellek",
+       major: "Electrical Engineering and Computer Science; Mathematics",
+       classYear: "2026",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Vishruth Konakanchi": {
+       name: "Vishruth Konakanchi",
+       major: "Computer Science and Engineering",
+       classYear: "2026",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Colin Clark": {
+       name: "Colin Clark",
+       major: "Electrical Science and Engineering; Physics (Flexible)",
+       classYear: "2026",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Tom Nguyen": {
+       name: "Tom Nguyen",
+       major: "Mechanical Engineering with Concentration in Controls, Instrumentation, and Robotics",
+       classYear: "2026",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Ryan Duarte": {
+       name: "Ryan Duarte",
+       major: "Mechanical Engineering",
+       classYear: "2027",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Max Misterka": {
+       name: "Max Misterka",
+       major: "Mathematics with Computer Science; Chemistry or Physics",
+       classYear: "2027",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Michael Georgievski": {
+       name: "Michael Georgievski",
+       major: "Physics; Computer Science and Engineering; Mathematics",
+       classYear: "2027",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Asa Paparo": {
+       name: "Asa Paparo",
+       major: "Computer Science and Engineering",
+       classYear: "2028",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Angelo Farfan": {
+       name: "Angelo Farfan",
+       major: "Mathematics; Artificial Intelligence and Decision Making",
+       classYear: "2028",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Guy Gong": {
+       name: "Guy Gong",
+       major: "Mechanical Engineering",
+       classYear: "2028",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Yrwin Batan": {
+       name: "Yrwin Batan",
+       major: "Computer Science, Economics, and Data Science",
+       classYear: "2028",
+       image: "/placeholder.svg",
+       position: undefined
+     },
+     "Jasper Lee": {
+       name: "Jasper Lee",
+       major: "Mechanical Engineering; Physics",
+       classYear: "2028",
+       image: "/placeholder.svg",
+       position: undefined
+     }
+  }
+
+  // Executive Board in order
+  const executiveBoardOrder = [
+    "Alex Meier",
+    "Michael Serrano",
+    "William Nolan",
+    "Johnny Peng",
+    "Raul Campos",
+    "Carlos Lopez",
+    "Enrique Hernandez",
+    "Matvey Borodin",
+    "Alberto Mora Trinidad",
+    "Amir Alsad",
+    "Jeanpaul Sanchez-Moreno"
   ]
 
-  const brothers = [
-    {
-      name: "Alex Thompson",
-      major: "Computer Science",
-      year: "Senior",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "Ryan Davis",
-      major: "Psychology",
-      year: "Junior",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "Kevin Martinez",
-      major: "Pre-Med",
-      year: "Sophomore",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "Tyler Anderson",
-      major: "Marketing",
-      year: "Junior",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "Brandon Lee",
-      major: "Political Science",
-      year: "Senior",
-      image: "/placeholder.svg",
-    },
-    {
-      name: "Jordan Taylor",
-      major: "Economics",
-      year: "Sophomore",
-      image: "/placeholder.svg",
-    },
-  ]
+  const executiveBoard = executiveBoardOrder.map(name => brothersDatabase[name as keyof typeof brothersDatabase])
+
+  // Brothers by class year
+  const brothersByClass = {
+    2026: Object.values(brothersDatabase).filter(brother => brother.classYear === "2026"),
+    2027: Object.values(brothersDatabase).filter(brother => brother.classYear === "2027"),
+    2028: Object.values(brothersDatabase).filter(brother => brother.classYear === "2028"),
+    2029: []
+  }
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="pt-20 pb-8 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1
-            className="text-4xl md:text-6xl font-bold mb-6 text-[#002F6C] tracking-wider"
+            className="text-4xl md:text-6xl font-bold text-[#002F6C] tracking-wider"
             style={{ fontFamily: "serif" }}
           >
             MEET THE BROTHERS
           </h1>
-          <p
-            className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto"
-            style={{ fontFamily: "Arial, sans-serif" }}
-          >
-            Our brotherhood is made up of diverse, talented individuals united by shared values and lifelong bonds.
-          </p>
         </div>
       </section>
 
       {/* Executive Board */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+      <section className="pt-8 pb-12 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
             <h2
-              className="text-3xl md:text-4xl font-bold mb-6 text-[#002F6C] tracking-wider"
+              className="text-3xl md:text-4xl font-bold text-[#002F6C] tracking-wider"
               style={{ fontFamily: "serif" }}
             >
-              EXECUTIVE BOARD
+              2025 EXECUTIVE BOARD
             </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto" style={{ fontFamily: "Arial, sans-serif" }}>
-              Meet the leaders who guide our chapter and uphold our traditions.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-6">
             {executiveBoard.map((member) => (
-              <Card
+              <div
                 key={member.name}
-                className="overflow-hidden bg-white border-2 border-[#69B3E7] hover:shadow-xl transition-all duration-300 group"
+                className="w-48"
               >
-                <div className="relative">
+                <div className="relative h-48 mb-4">
                   <Image
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
-                    width={300}
-                    height={300}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#002F6C]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-                <div className="p-6">
-                  <Badge className="mb-3 bg-[#002F6C] text-white">{member.position}</Badge>
+                <div className="flex flex-col">
+                  <div className="h-6 mb-2">
+                    {member.position && <Badge className="bg-[#002F6C] text-white text-xs">{member.position}</Badge>}
+                  </div>
                   <h3
-                    className="text-xl font-bold mb-2 text-[#002F6C] tracking-wide"
+                    className="text-xs font-bold mb-1 text-[#002F6C] tracking-wide text-left"
                     style={{ fontFamily: "sans-serif" }}
                   >
                     {member.name.toUpperCase()}
                   </h3>
-                  <div className="flex items-center mb-2 text-gray-600">
-                    <GraduationCap className="w-4 h-4 mr-2" />
-                    <span className="text-sm" style={{ fontFamily: "Arial, sans-serif" }}>
-                      {member.major} • {member.year}
-                    </span>
-                  </div>
-                  <p className="text-sm text-gray-700 leading-relaxed" style={{ fontFamily: "Arial, sans-serif" }}>
-                    {member.bio}
-                  </p>
+                  <span className="text-xs text-gray-600 italic text-left" style={{ fontFamily: "Arial, sans-serif" }}>
+                    {member.classYear}
+                  </span>
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* All Brothers */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2
-              className="text-3xl md:text-4xl font-bold mb-6 text-[#002F6C] tracking-wider"
-              style={{ fontFamily: "serif" }}
-            >
-              OUR BROTHERHOOD
-            </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto" style={{ fontFamily: "Arial, sans-serif" }}>
-              Each brother brings unique talents, perspectives, and experiences that strengthen our chapter.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {brothers.map((brother, index) => (
-              <Card
-                key={brother.name}
-                className={`
-                  overflow-hidden bg-white/90 backdrop-blur-sm border-2 border-[#69B3E7]
-                  hover:shadow-xl transition-all duration-300 group
-                  ${index % 2 === 0 ? "transform rotate-1" : "transform -rotate-1"}
-                  hover:rotate-0
-                `}
+      {/* Brothers by Class Year */}
+      {Object.entries(brothersByClass).map(([classYear, brothers]) => (
+        <section key={classYear} className="py-16 px-6 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2
+                className="text-3xl md:text-4xl font-bold text-[#002F6C] tracking-wider"
+                style={{ fontFamily: "serif" }}
               >
-                <div className="relative">
-                  <Image
-                    src={brother.image || "/placeholder.svg"}
-                    alt={brother.name}
-                    width={250}
-                    height={250}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#002F6C]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="p-6">
-                  <h3
-                    className="text-lg font-bold mb-2 text-[#002F6C] tracking-wide"
-                    style={{ fontFamily: "sans-serif" }}
+                CLASS OF {classYear}
+              </h2>
+            </div>
+
+            {brothers.length > 0 ? (
+              <div className="flex flex-wrap justify-center gap-6">
+                {brothers.map((brother) => (
+                  <div
+                    key={brother.name}
+                    className="w-48"
                   >
-                    {brother.name.toUpperCase()}
-                  </h3>
-                  <div className="flex items-center text-gray-600">
-                    <GraduationCap className="w-4 h-4 mr-2" />
-                    <span className="text-sm" style={{ fontFamily: "Arial, sans-serif" }}>
-                      {brother.major} • {brother.year}
-                    </span>
+                    <div className="relative h-48 mb-4">
+                      <Image
+                        src={brother.image}
+                        alt={brother.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <h3
+                        className="text-xs font-bold mb-2 text-[#002F6C] tracking-wide text-left"
+                        style={{ fontFamily: "sans-serif" }}
+                      >
+                        {brother.name.toUpperCase()}
+                      </h3>
+                      <span className="text-xs leading-relaxed text-gray-600 italic text-left" style={{ fontFamily: "Arial, sans-serif" }}>
+                        {brother.major}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </Card>
-            ))}
+                ))}
+              </div>
+            ) : (
+              <div className="text-center text-gray-500">
+                <p className="text-lg" style={{ fontFamily: "Arial, sans-serif" }}>
+                  <a
+                    href="/rush"
+                    className="text-[#002F6C] hover:text-[#69B3E7] underline transition-colors duration-200"
+                  >
+                    Interested? Rush us.
+                  </a>
+                </p>
+              </div>
+            )}
           </div>
-        </div>
-      </section>
-
-      {/* Brotherhood Stats */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2
-              className="text-3xl md:text-4xl font-bold mb-6 text-[#002F6C] tracking-wider"
-              style={{ fontFamily: "serif" }}
-            >
-              BROTHERHOOD BY THE NUMBERS
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-[#002F6C] mb-2" style={{ fontFamily: "serif" }}>
-                45
-              </div>
-              <div className="text-lg text-gray-700" style={{ fontFamily: "sans-serif" }}>
-                ACTIVE BROTHERS
-              </div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-[#002F6C] mb-2" style={{ fontFamily: "serif" }}>
-                3.4
-              </div>
-              <div className="text-lg text-gray-700" style={{ fontFamily: "sans-serif" }}>
-                AVERAGE GPA
-              </div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-[#002F6C] mb-2" style={{ fontFamily: "serif" }}>
-                15
-              </div>
-              <div className="text-lg text-gray-700" style={{ fontFamily: "sans-serif" }}>
-                MAJORS REPRESENTED
-              </div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-[#002F6C] mb-2" style={{ fontFamily: "serif" }}>
-                500+
-              </div>
-              <div className="text-lg text-gray-700" style={{ fontFamily: "sans-serif" }}>
-                SERVICE HOURS
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      ))}
     </div>
   )
 }

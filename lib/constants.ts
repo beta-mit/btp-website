@@ -7,16 +7,17 @@ export const FRATERNITY_INFO = {
   foundedAt: "Miami University in Oxford, Ohio",
   motto: "Men of Principle for a Principled Life",
   address: {
-    street: "123 Greek Row",
-    city: "University City",
-    state: "ST",
-    zip: "12345"
+    street: "119 Bay State Road",
+    city: "Boston",
+    state: "MA",
+    zip: "02215"
   },
   contact: {
-    email: "rush@betaupsilonbtp.org",
+    email: "beta-contact@mit.edu",
     social: {
-      facebook: "https://facebook.com/betaupsilonbtp",
-      instagram: "https://instagram.com/betaupsilonbtp"
+      facebook: "https://www.facebook.com/betamit/",
+      instagram: "https://www.instagram.com/beta_mit/",
+      maps: "https://www.google.com/maps/place/Beta+Theta+Pi/@42.350442,-71.09872,17z/data=!3m1!4b1!4m6!3m5!1s0x89e379f817c9ab5d:0x54de239b314da47d!8m2!3d42.350442!4d-71.09872!16s%2Fg%2F11fy99xbs4?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
     }
   }
 } as const
@@ -27,7 +28,7 @@ export const NAVIGATION_ITEMS = [
   { title: "Benefits", href: "/benefits" },
   { title: "Rush", href: "/rush" },
   { title: "Housing", href: "/housing" },
-  { title: "Alumni", href: "/alumni" },
+  { title: "Alumni", href: "https://beta-mit.org/" },
 ] as const
 
 export const RUSH_TIPS = [

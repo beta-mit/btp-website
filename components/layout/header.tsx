@@ -33,7 +33,7 @@ export function Header() {
           <Link href="/" className="flex items-center group">
             <div className="relative hover:scale-110 transition-transform duration-300">
                               <Image
-                src="/logo-placeholder.svg"
+                src="/btp-logo.png"
                 alt="Beta Theta Pi Logo"
                 width={60}
                 height={60}

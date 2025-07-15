@@ -25,32 +25,32 @@ export default function HomePage() {
     {
       title: "About",
       href: "/about",
-      image: "/placeholder.svg",
+      image: "/btp-memorabilia.jpg",
     },
     {
       title: "Brothers",
       href: "/brothers",
-      image: "/placeholder.svg",
+      image: "/old-brotherhood-1.jpg",
     },
     {
       title: "Benefits",
       href: "/benefits",
-      image: "/placeholder.svg",
+      image: "/2025-formal-1.jpg",
     },
     {
       title: "Rush",
       href: "/rush",
-      image: "/placeholder.svg",
+      image: "/2025-paintball.jpg",
     },
     {
       title: "Housing",
       href: "/housing",
-      image: "/placeholder.svg",
+      image: "/house.jpg",
     },
     {
       title: "Alumni",
-      href: "/alumni",
-      image: "/placeholder.svg",
+      href: "https://beta-mit.org/",
+      image: "/old-graduation.jpg",
     },
   ]
 
@@ -58,14 +58,7 @@ export default function HomePage() {
     if (hoveredIndex === null) return "scale-100"
     if (currentIndex === hoveredIndex) return "scale-110 z-10"
 
-    // Only shrink adjacent/surrounding images
-    const isAdjacent = Math.abs(currentIndex - hoveredIndex) === 1
-    const isVerticallyAdjacent = Math.abs(currentIndex - hoveredIndex) === 3 // For 3-column grid
-
-    if (isAdjacent || isVerticallyAdjacent) {
-      return "scale-90"
-    }
-
+    // Don't affect neighbor cards - only scale the hovered card
     return "scale-100"
   }
 
@@ -103,7 +96,7 @@ export default function HomePage() {
         >
           {/* Main Hero Image */}
           <Image
-            src="/hero-placeholder.svg"
+            src="/2025-induction-1.jpg"
             alt="Beta Theta Pi Brothers"
             fill
             className="object-cover"
@@ -112,16 +105,16 @@ export default function HomePage() {
 
           {/* Animated Overlay Image (visible through magnifying glass) */}
           <div
-            className="absolute inset-0 opacity-0 transition-opacity duration-300"
+            className="absolute inset-0 transition-opacity duration-300"
             style={{
               clipPath: isHovering
-                ? `circle(100px at ${mousePosition.x}px ${mousePosition.y}px)`
+                ? `circle(120px at ${mousePosition.x}px ${mousePosition.y}px)`
                 : "circle(0px at 50% 50%)",
               transition: "clip-path 0.1s ease-out",
             }}
           >
             <Image
-              src="/hero-placeholder.svg"
+              src="/2025-induction-1-anime.png"
               alt="Animated Beta Theta Pi Brothers"
               fill
               className="object-cover opacity-100 saturate-150 contrast-110"
@@ -129,30 +122,16 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-r from-delicate-pink/20 to-beta-blue-292/20"></div>
           </div>
 
-          {/* Magnifying Glass Cursor */}
-          {isHovering && (
-            <div
-              className="absolute pointer-events-none z-10 w-8 h-8 border-4 border-beta-blue-294 rounded-full bg-white/20 backdrop-blur-sm animate-shake shadow-beta"
-              style={{
-                left: mousePosition.x - 16,
-                top: mousePosition.y - 16,
-                transform: "scale(1.2)",
-              }}
-            >
-              <div className="absolute inset-2 border border-beta-blue-294 rounded-full"></div>
-            </div>
-          )}
-
           {/* Hero Text Overlay */}
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
             <div className="text-center text-white px-4">
               <h1
-                className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider animate-bounce-crazy font-serif"
+                className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider font-serif"
               >
                 BETA UPSILON CHAPTER
               </h1>
               <h2
-                className="text-2xl md:text-4xl font-semibold tracking-widest text-beta-blue-292 animate-wiggle font-sans"
+                className="text-2xl md:text-4xl font-semibold tracking-widest text-beta-blue-292 font-sans"
               >
                 BETA THETA PI
               </h2>
@@ -178,7 +157,12 @@ export default function HomePage() {
                   ${getImageScale(index, hoveredSection ? navigationSections.findIndex((s) => s.title === hoveredSection) : null)}
                 `}
               >
-                <Image src={section.image || "/placeholder.svg"} alt={section.title} fill className="object-cover" />
+                <Image
+                  src={section.image || "/placeholder.svg"}
+                  alt={section.title}
+                  fill
+                  className={`object-cover ${section.title === "Alumni" ? "object-top" : ""}`}
+                />
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300"></div>

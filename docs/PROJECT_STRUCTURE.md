@@ -24,8 +24,6 @@ The `app/` directory uses Next.js 13+ App Router for file-based routing.
 app/
 ├── about/                  # About page route
 │   └── page.tsx           # /about page component
-├── alumni/                 # Alumni page route
-│   └── page.tsx           # /alumni page component
 ├── benefits/               # Benefits page route
 │   └── page.tsx           # /benefits page component
 ├── brothers/               # Brothers page route
@@ -68,7 +66,7 @@ app/
 Each page directory contains a `page.tsx` file that exports the page component:
 
 - **About**: Chapter history, values, and mission
-- **Alumni**: Alumni network and connections
+- **Alumni**: Redirects to external alumni website (https://beta-mit.org/)
 - **Benefits**: Advantages of joining Beta Theta Pi
 - **Brothers**: Active member profiles and leadership
 - **Housing**: Chapter house details and amenities

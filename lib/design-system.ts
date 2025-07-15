@@ -9,7 +9,12 @@ export const colors = {
       secondary: "#003DA5",     // beta-blue-293
       light: "#69B3E7",        // beta-blue-292
     },
-    red: "#AB2328",
+    red: "#AB2328",            // PANTONE 7621
+    gold: "#998542",           // PANTONE 4505
+    silver: "#8A8D8F",         // PANTONE 877
+    redLight: "#C73E42",
+    goldLight: "#B8A456",
+    silverLight: "#A1A4A6",
     pink: "#F8BBD9",           // delicate-pink
   },
   // Semantic Colors
