@@ -6,19 +6,26 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default function HomePage() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isHovering, setIsHovering] = useState(false)
   const [hoveredSection, setHoveredSection] = useState<string | null>(null)
   const heroRef = useRef<HTMLDivElement>(null)
+  const overlayRef = useRef<HTMLDivElement>(null)
+  const rafIdRef = useRef<number | null>(null)
+  const lastPosRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 })
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (heroRef.current) {
-      const rect = heroRef.current.getBoundingClientRect()
-      setMousePosition({
-        x: e.clientX - rect.left,
-        y: e.clientY - rect.top,
-      })
+    if (!heroRef.current || !overlayRef.current) return
+    const rect = heroRef.current.getBoundingClientRect()
+    lastPosRef.current = {
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
     }
+    if (rafIdRef.current !== null) cancelAnimationFrame(rafIdRef.current)
+    rafIdRef.current = requestAnimationFrame(() => {
+      if (!overlayRef.current) return
+      const { x, y } = lastPosRef.current
+      overlayRef.current.style.clipPath = `circle(120px at ${x}px ${y}px)`
+    })
   }
 
   const navigationSections = [
@@ -105,12 +112,13 @@ export default function HomePage() {
 
           {/* Animated Overlay Image (visible through magnifying glass) */}
           <div
+            ref={overlayRef}
             className="absolute inset-0 transition-opacity duration-300"
             style={{
               clipPath: isHovering
-                ? `circle(120px at ${mousePosition.x}px ${mousePosition.y}px)`
+                ? `circle(120px at 50% 50%)`
                 : "circle(0px at 50% 50%)",
-              transition: "clip-path 0.1s ease-out",
+              transition: "clip-path 0.12s ease-out",
             }}
           >
             <Image
@@ -126,12 +134,12 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
             <div className="text-center text-white px-4">
               <h1
-                className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wider font-serif"
+                className="text-4xl md:text-6xl lg:text-7xl font-normal mb-4 tracking-wider font-serif"
               >
                 BETA UPSILON CHAPTER
               </h1>
               <h2
-                className="text-2xl md:text-4xl font-semibold tracking-widest text-beta-blue-292 font-sans"
+                className="text-2xl md:text-4xl font-semibold tracking-widest text-beta-blue-292 font-sans uppercase"
               >
                 BETA THETA PI
               </h2>
@@ -171,7 +179,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white px-4">
                     <h3
-                      className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider font-serif"
+                      className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider font-sans uppercase"
                     >
                       {section.title.toUpperCase()}
                     </h3>

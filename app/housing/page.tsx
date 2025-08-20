@@ -17,8 +17,7 @@ export default function HousingPage() {
       <section className="pt-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1
-            className="text-4xl md:text-6xl font-bold mb-6 text-[#002F6C] tracking-wider"
-            style={{ fontFamily: "serif" }}
+            className="text-4xl md:text-6xl font-normal mb-6 text-[#002F6C] tracking-wider font-serif"
           >
             CHAPTER HOUSE
           </h1>
@@ -31,8 +30,7 @@ export default function HousingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2
-                className="text-3xl md:text-4xl font-bold mb-6 text-[#002F6C] tracking-wider"
-                style={{ fontFamily: "serif" }}
+                className="text-3xl md:text-4xl font-normal mb-6 text-[#002F6C] tracking-wider font-serif"
               >
                 OUR HOME
               </h2>
@@ -51,7 +49,7 @@ export default function HousingPage() {
               </div>
               <div className="mt-6 flex items-center text-[#002F6C]">
                 <MapPin className="w-5 h-5 mr-2" />
-                <span className="font-semibold" style={{ fontFamily: "sans-serif" }}>
+                <span className="font-semibold font-sans uppercase">
                   119 Bay State Rd, Boston, MA, 02215
                 </span>
               </div>
@@ -78,8 +76,7 @@ export default function HousingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <h2
-              className="text-3xl md:text-4xl font-bold mb-6 text-[#002F6C] tracking-wider"
-              style={{ fontFamily: "serif" }}
+              className="text-3xl md:text-4xl font-normal mb-6 text-[#002F6C] tracking-wider font-serif"
             >
               HOUSE AMENITIES
             </h2>
@@ -103,8 +100,7 @@ export default function HousingPage() {
           {/* Photo Collage */}
           <div className="text-center mt-20">
             <h3
-              className="text-3xl md:text-4xl font-bold mb-8 text-[#002F6C] tracking-wider"
-              style={{ fontFamily: "serif" }}
+              className="text-3xl md:text-4xl font-normal mb-8 text-[#002F6C] tracking-wider font-serif"
             >
               HAVE A LOOK FOR YOURSELF
             </h3>
@@ -130,14 +126,12 @@ export default function HousingPage() {
       <section className="pb-10 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-2 text-[#002F6C] tracking-wider"
-            style={{ fontFamily: "serif" }}
+            className="text-3xl md:text-4xl font-normal mb-2 text-[#002F6C] tracking-wider font-serif"
           >
             INTERESTED IN SUMMER HOUSING?
           </h2>
           <p
-            className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto"
-            style={{ fontFamily: "Arial, sans-serif" }}
+            className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto font-body"
           >
             Reach out.
             <br/><br/>Housing Manager: Raul Campos

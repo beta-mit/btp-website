@@ -23,7 +23,7 @@ export default function BrothersPage() {
     "William Nolan": {
       name: "William Nolan",
       major: "Physics",
-      classYear: "Graduate Student",
+      classYear: "2026",
       image: "/shared/placeholder.svg",
       position: "VP Internal"
     },
@@ -174,6 +174,13 @@ export default function BrothersPage() {
        classYear: "2028",
        image: "/shared/placeholder.svg",
        position: undefined
+     },
+     "Tristan Hoang": {
+       name: "Tristan Hoang",
+       major: "Political Science",
+       classYear: "2028",
+       image: "/shared/placeholder.svg",
+       position: undefined
      }
   }
 
@@ -208,8 +215,7 @@ export default function BrothersPage() {
       <section className="pt-20 pb-8 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1
-            className="text-4xl md:text-6xl font-bold text-[#002F6C] tracking-wider"
-            style={{ fontFamily: "serif" }}
+            className="text-4xl md:text-6xl font-normal text-[#002F6C] tracking-wider font-serif"
           >
             MEET THE BROTHERS
           </h1>
@@ -221,8 +227,7 @@ export default function BrothersPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2
-              className="text-3xl md:text-4xl font-bold text-[#002F6C] tracking-wider"
-              style={{ fontFamily: "serif" }}
+              className="text-3xl md:text-4xl font-normal text-[#002F6C] tracking-wider font-serif"
             >
               2025 EXECUTIVE BOARD
             </h2>
@@ -247,12 +252,11 @@ export default function BrothersPage() {
                     {member.position && <Badge className="bg-[#002F6C] text-white text-xs">{member.position}</Badge>}
                   </div>
                   <h3
-                    className="text-xs font-bold mb-1 text-[#002F6C] tracking-wide text-left"
-                    style={{ fontFamily: "sans-serif" }}
+                    className="text-xs font-bold mb-1 text-[#002F6C] tracking-wide text-left font-sans uppercase"
                   >
                     {member.name.toUpperCase()}
                   </h3>
-                  <span className="text-xs text-gray-600 italic text-left" style={{ fontFamily: "Arial, sans-serif" }}>
+                  <span className="text-xs text-gray-600 italic text-left font-body">
                     {member.classYear}
                   </span>
                 </div>
@@ -268,8 +272,7 @@ export default function BrothersPage() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <h2
-                className="text-3xl md:text-4xl font-bold text-[#002F6C] tracking-wider"
-                style={{ fontFamily: "serif" }}
+                className="text-3xl md:text-4xl font-normal text-[#002F6C] tracking-wider font-serif"
               >
                 CLASS OF {classYear}
               </h2>
@@ -292,12 +295,11 @@ export default function BrothersPage() {
                     </div>
                     <div className="flex flex-col">
                       <h3
-                        className="text-xs font-bold mb-2 text-[#002F6C] tracking-wide text-left"
-                        style={{ fontFamily: "sans-serif" }}
+                        className="text-xs font-bold mb-2 text-[#002F6C] tracking-wide text-left font-sans uppercase"
                       >
                         {brother.name.toUpperCase()}
                       </h3>
-                      <span className="text-xs leading-relaxed text-gray-600 italic text-left" style={{ fontFamily: "Arial, sans-serif" }}>
+                      <span className="text-xs leading-relaxed text-gray-600 italic text-left font-body">
                         {brother.major}
                       </span>
                     </div>
@@ -306,7 +308,7 @@ export default function BrothersPage() {
               </div>
             ) : (
               <div className="text-center text-gray-500">
-                <p className="text-lg" style={{ fontFamily: "Arial, sans-serif" }}>
+                <p className="text-lg font-body">
                   <a
                     href="/rush"
                     className="text-[#002F6C] hover:text-[#69B3E7] underline transition-colors duration-200"

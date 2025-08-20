@@ -2,6 +2,63 @@
 
 /* === CUSTOM BETA THETA PI UTILITIES === */
 
+/* === FONT FACE DECLARATIONS === */
+@font-face {
+  font-family: "Albertus";
+  src: url("/fonts/Albertus MT Std/AlbertusMTStd.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albertus";
+  src: url("/fonts/Albertus MT Std/AlbertusMTStdItalic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albertus";
+  src: url("/fonts/Albertus MT Std/AlbertusMTStdLight.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bernino Sans";
+  src: url("/fonts/Bernino Sans/fonts/fonnts.com-Bernino_Sans.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bernino Sans";
+  src: url("/fonts/Bernino Sans/fonts/fonnts.com-Bernino_Sans_Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bernino Sans";
+  src: url("/fonts/Bernino Sans/fonts/fonnts.com-Bernino_Sans_Italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bernino Sans";
+  src: url("/fonts/Bernino Sans/fonts/fonnts.com-Bernino_Sans_Semibold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
 /* Brand Colors */
 @utility beta-blue-294 {
   color: var(--beta-blue-294);
@@ -50,11 +107,11 @@
 
 /* Typography */
 @utility font-serif {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Albertus", Georgia, "Times New Roman", serif;
 }
 
 @utility font-sans {
-  font-family: Inter, system-ui, sans-serif;
+  font-family: "Bernino Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 @utility font-body {
@@ -155,7 +212,7 @@
   }
 
   body {
-    @apply bg-white text-foreground;
+    @apply bg-white text-foreground font-body;
     /* Enhanced scrolling for webkit browsers */
     -webkit-overflow-scrolling: touch;
     /* Smooth momentum scrolling on iOS */
@@ -186,6 +243,14 @@
   * {
     scrollbar-width: thin;
     scrollbar-color: #c1c1c1 #f1f1f1;
+  }
+
+  /* Default typography roles */
+  h1 {
+    @apply font-serif font-normal;
+  }
+  h2, h3 {
+    @apply font-sans uppercase font-bold;
   }
 }
 

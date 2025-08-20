@@ -42,10 +42,10 @@ export function Header() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-beta-blue-292/20 to-beta-blue-294/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="ml-3">
-              <div className="text-beta-blue-294 font-bold text-lg tracking-wider font-serif">
+              <div className="text-beta-blue-294 font-normal text-lg tracking-wider font-serif">
                 ΒΘΠ
               </div>
-              <div className="text-beta-blue-294 text-xs tracking-widest font-sans">
+              <div className="text-beta-blue-294 text-xs tracking-widest font-sans uppercase">
                 BETA UPSILON
               </div>
             </div>

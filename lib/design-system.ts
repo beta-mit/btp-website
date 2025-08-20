@@ -34,17 +34,20 @@ export const colors = {
 export const typography = {
   // Font Families
   fonts: {
+    // Albertus for big headings
     serif: "font-serif",
+    // Bernino Sans for titles/headlines (pair with uppercase in components)
     sans: "font-sans",
-    body: "font-body", // Will fallback to sans if not defined
+    // Arial for body text
+    body: "font-body",
   },
 
   // Heading Styles
   headings: {
-    hero: "text-4xl md:text-6xl font-bold tracking-wider font-serif",
-    section: "text-3xl md:text-4xl font-bold tracking-wider font-serif",
-    card: "text-xl font-bold tracking-wider font-sans",
-    subheading: "text-lg font-bold tracking-wide font-sans",
+    hero: "text-4xl md:text-6xl font-normal tracking-wider font-serif",
+    section: "text-3xl md:text-4xl font-normal tracking-wider font-serif",
+    card: "text-xl font-bold tracking-wider font-sans uppercase",
+    subheading: "text-lg font-bold tracking-wide font-sans uppercase",
   },
 
   // Body Text Styles

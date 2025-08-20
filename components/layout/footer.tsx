@@ -44,10 +44,10 @@ export function Footer() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div>
-              <div className="text-beta-blue-292 font-bold text-lg tracking-wider font-serif group-hover:text-white transition-colors duration-300">
+              <div className="text-beta-blue-292 font-normal text-lg tracking-wider font-serif group-hover:text-white transition-colors duration-300">
                 ΒΘΠ
               </div>
-              <div className="text-beta-blue-292 text-xs tracking-widest font-sans group-hover:text-white transition-colors duration-300">
+              <div className="text-beta-blue-292 text-xs tracking-widest font-sans uppercase group-hover:text-white transition-colors duration-300">
                 BETA UPSILON
               </div>
             </div>

@@ -1,7 +1,25 @@
 "use client"
 import { Card } from "@/components/ui/card"
+import { useEffect, useState } from "react"
+
+interface RushEvent {
+  emoji: string
+  name: string
+  secondaryEmoji: string
+  description: string
+  dates: string[]
+}
 
 export default function RushPage() {
+  const [rushEvents, setRushEvents] = useState<RushEvent[]>([])
+
+  useEffect(() => {
+    // Load events data
+    fetch('/rush/fall-rush-events.json')
+      .then(response => response.json())
+      .then(data => setRushEvents(data))
+      .catch(error => console.error('Error loading rush events:', error))
+  }, [])
 
   return (
     <div className="min-h-screen">
@@ -9,7 +27,7 @@ export default function RushPage() {
       <section className="pt-12 pb-6 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1
-            className="text-4xl md:text-6xl font-bold mb-6 text-beta-blue-294 tracking-wider font-serif"
+            className="text-4xl md:text-6xl font-normal mb-6 text-beta-blue-294 tracking-wider font-serif"
           >
             RUSH BETA
           </h1>
@@ -32,7 +50,7 @@ export default function RushPage() {
             {/* Right side - Content */}
             <div className="order-1 lg:order-2">
               <h2
-                className="text-3xl md:text-4xl font-bold mb-6 text-beta-blue-294 tracking-wider font-serif"
+                className="text-3xl md:text-4xl font-normal mb-6 text-beta-blue-294 tracking-wider font-serif"
               >
                 THE RUSH PROCESS
               </h2>
@@ -52,7 +70,7 @@ export default function RushPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2
-              className="text-3xl md:text-4xl font-bold mb-6 text-beta-blue-294 tracking-wider font-serif"
+              className="text-3xl md:text-4xl font-normal mb-6 text-beta-blue-294 tracking-wider font-serif"
             >
               FALL RUSH
             </h2>
@@ -68,6 +86,36 @@ export default function RushPage() {
               title="Fall Rush Calendar"
             ></iframe>
           </div>
+
+          {/* Fall Rush Events */}
+          <div className="max-w-6xl mx-auto mt-16">
+            <div className="space-y-8">
+              {rushEvents.map((event, index) => (
+                <div key={index} className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
+                  <h3 className="text-2xl font-bold mb-4 text-beta-blue-294 flex items-center gap-2 font-sans uppercase tracking-wider">
+                    <span className="text-3xl">{event.emoji}</span>
+                    {event.name}
+                    <span className="text-3xl">{event.secondaryEmoji}</span>
+                  </h3>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4 font-body">
+                    {event.description}
+                  </p>
+
+                  <div className="mt-4">
+                    <h4 className="font-bold text-beta-blue-294 mb-2 font-sans uppercase tracking-wide">Dates and Times:</h4>
+                    <ul className="space-y-1">
+                      {event.dates.map((date, dateIndex) => (
+                        <li key={dateIndex} className="text-gray-700 font-body">
+                          {date}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -76,7 +124,7 @@ export default function RushPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2
-              className="text-3xl md:text-4xl font-bold mb-6 text-beta-blue-294 tracking-wider font-serif"
+              className="text-3xl md:text-4xl font-normal mb-6 text-beta-blue-294 tracking-wider font-serif"
             >
               SPRING RUSH
             </h2>
@@ -91,14 +139,12 @@ export default function RushPage() {
       <section className="pb-10 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-2 text-[#002F6C] tracking-wider"
-            style={{ fontFamily: "serif" }}
+            className="text-3xl md:text-4xl font-normal mb-2 text-[#002F6C] tracking-wider font-serif"
           >
             INTERESTED IN RUSH?
           </h2>
           <p
-            className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto"
-            style={{ fontFamily: "Arial, sans-serif" }}
+            className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto font-body"
           >
             Reach out.
             <br/><br/>Co-VPs of Recruitment: Amir Alsad and Jeanpaul Sanchez-Moreno

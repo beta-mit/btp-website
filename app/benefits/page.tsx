@@ -30,8 +30,7 @@ export default function BenefitsPage() {
             {/* Member Benefits - Left Side */}
             <div className="text-center lg:border-r lg:border-gray-300 lg:pr-6">
               <h2
-                className="text-3xl md:text-4xl font-bold mb-8 text-[#002F6C] tracking-wider"
-                style={{ fontFamily: "serif" }}
+                className="text-3xl md:text-4xl font-normal mb-8 text-[#002F6C] tracking-wider font-serif"
               >
                 MEMBER BENEFITS
               </h2>
@@ -55,8 +54,7 @@ export default function BenefitsPage() {
             {/* Why Beta Over Others - Right Side */}
             <div className="text-center lg:pl-6">
               <h2
-                className="text-3xl md:text-4xl font-bold mb-8 text-[#002F6C] tracking-wider"
-                style={{ fontFamily: "serif" }}
+                className="text-3xl md:text-4xl font-normal mb-8 text-[#002F6C] tracking-wider font-serif"
               >
                 WHY BETA OVER OTHERS?
               </h2>
@@ -86,7 +84,7 @@ export default function BenefitsPage() {
         <div className="space-y-10 -mt-8">
           {/* Beta Upsilon Sub-section */}
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-center">Beta Upsilon</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center font-sans uppercase">Beta Upsilon</h3>
             <div className="mb-8">
               <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto" style={{ fontFamily: "Arial, sans-serif" }}>
                 MIT produces many successful people every year. Obviously. But the Beta Upsilon chapter of Beta Theta Pi have produced some of the most notorious. Ignoring the many, many brothers that end up working for top companies or even founding their own, we present an astronaut (not a noobie, but a Commander) and the Koch brothers (yes, the one's with an MIT building and MIT cancer research institute named after them).
@@ -139,7 +137,7 @@ export default function BenefitsPage() {
 
           {/* National Sub-section */}
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-center">National</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center font-sans uppercase">National</h3>
             <div className="mb-8">
               <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto" style={{ fontFamily: "Arial, sans-serif" }}>
                 The Fraternity is proud to claim among its members the 17th Vice President of the United States, the 17th Prime Minister of Canada, nearly 200 members of the U.S. Senate and House of Representatives – including two Speakers of the House, eight U.S. Supreme Court Justices, a Justice of the Supreme Court of Canada, 32 ambassadors, 52 governors to 30 states, two Canadian Premiers, six Congressional Medal of Honor recipients and seven Presidential Medal of Freedom honorees, 34 Olympic gold medalists, three Nobel Prize winners, 85 Rhodes Scholars, 12 Pulitzer Prize winners and many more.
