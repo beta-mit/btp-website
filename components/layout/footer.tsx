@@ -78,6 +78,17 @@ export function Footer() {
           {/* Separator */}
           <div className="w-px h-12 bg-beta-blue-292/30"></div>
 
+          <div className="text-center">
+            <p className="text-sm font-body">
+              For accessibility information see
+              <br />
+              <a href="https://accessibility.mit.edu/">https://accessibility.mit.edu</a>
+            </p>
+          </div>
+
+          {/* Separator */}
+          <div className="w-px h-12 bg-beta-blue-292/30"></div>
+
           {/* Social Icons Column */}
           <div className="flex space-x-3">
             {socialLinks.map((social) => {
