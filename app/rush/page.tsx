@@ -79,7 +79,7 @@ export default function RushPage() {
           {/* Google Calendar Embed */}
           <div className="w-full max-w-4xl mx-auto">
             <iframe
-              src="https://calendar.google.com/calendar/embed?src=687b664eda793ae1e6bd3c19a84b42da4d00bed862c98ad1e37ed28eafe9b175%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA"
+              src="              https://calendar.google.com/calendar/embed?src=21cf3deb06aed0a8033a7b9305a08e0c454d6287e6062d6187bb323a773d1528%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA"
               className="w-full h-96 md:h-[600px] border border-gray-300 rounded-lg shadow-lg"
               frameBorder="0"
               scrolling="no"
