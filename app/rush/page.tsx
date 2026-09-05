@@ -147,7 +147,7 @@ export default function RushPage() {
             className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto font-body"
           >
             Reach out.
-            <br/><br/>Co-VPs of Recruitment: Amir Alsad and Jeanpaul Sanchez-Moreno
+            <br/><br/>Co-VPs of Recruitment: Carlos Lopez and Isaac Sheard
             <br/>Email: beta-rush@mit.edu
           </p>
         </div>
