@@ -1,39 +1,29 @@
 [
   {
-    "emoji": "🛠️",
-    "name": "Beta Robotics Competition",
-    "secondaryEmoji": "🤖",
-    "description": "Do you love building things? Interested in robotics? Itching for some real competition? Join us for an all-day in-house robotics competition! Discover maker culture and Beta culture as we offer guidance to make your robotic dreams come true. Tour our state-of-the-art makerspace fit with plenty of tools at your disposal, and take your robot home at the end of it all! Building starts at 2pm, competition starts at 7pm.",
+    "emoji": "🐔",
+    "name": "Unlimited Raising Cane's",
+    "secondaryEmoji": "🍗",
+    "description": "🍗 UNLIMITED CANE’S 🍗 You read that right. Unlimited. Cane’s. Come to Beta and eat an unreasonable amount of chicken fingers, fries, Texas toast, and the greatest sauce known to mankind. We’ll keep the Cane’s coming until you physically cannot eat another tender. Pull up hungry, tour the house, meet the brothers, and hang out over way too much Cane’s. Bring an appetite. We’ll bring the chicken. 🍗🔥",
     "dates": [
-      "Saturday, August 30 from 02:00 PM to 08:00 PM"
+      "Saturday, September 05 from 02:00 PM to 04:00 PM"
     ]
   },
   {
-    "emoji": "🔥",
-    "name": "Beta Grill & Chill",
-    "secondaryEmoji": "🍔",
-    "description": "Take a break from building and get a tour of our historic 5 story brownstone mansion featuring a beautiful library study space, fully stocked industrial kitchen, electrical engineering and mechanical engineering machine shops, and newly renovated basement lounge/game room while feasting on delicious hamburgers fresh off the grill. Stop by for a burger, a quick chat, and chill vibes! Options available for all dietary restrictions.",
+    "emoji": "🌮",
+    "name": "The Great Beta Fiesta",
+    "secondaryEmoji": "🎺",
+    "description": "🌮 THE GREAT BETA FIESTA 🎺 Tacos. MARIACHI!!! Beta. What more do you need? Come by the house for a loaded taco bar, live mariachi music, and a night of hanging out with the brothers. Grab a plate, check out the house, and stick around for the fiesta. 🌮🎺",
     "dates": [
-      "Saturday, August 30 from 02:00 PM to 08:00 PM",
-      "Wednesday, September 03 from 05:00 PM to 08:00 PM"
+      "Saturday, September 05 from 05:00 PM to 08:00 PM"
     ]
   },
   {
-    "emoji": "🌊",
-    "name": "Riverside Field Day",
-    "secondaryEmoji": "🥏",
-    "description": "Calm evening field day along the beautiful Charles River Esplanade right behind our very own house. Enjoy laid-back games of volleyball, cornhole, and more while you soak in the view and get some fresh air!",
+    "emoji": "🎤",
+    "name": "MIT Family Feud",
+    "secondaryEmoji": "🎤",
+    "description": "🎤 FAMILY FEUD 🎤 Survey says… Beta’s running Family Feud. Grab a team, talk some trash, and go head-to-head answering questions about MIT, college life, and a few things you definitely won’t see coming. 😂🔥",
     "dates": [
-      "Saturday, August 30 from 04:00 PM to 07:00 PM"
-    ]
-  },
-  {
-    "emoji": "🗜️",
-    "name": "Hydraulic Press YT-Shorts-athon",
-    "secondaryEmoji": "💥",
-    "description": "Are you ever scrolling through YT shorts and get absolutely mesmerized by the crumple of a metal water bottle, enchanted by the smoosh of kinetic sand, or thrilled by the pop of a stack of paper? Beta presents YT Shorts in real life!",
-    "dates": [
-      "Saturday, August 30 from 08:00 PM to 11:00 PM"
+      "Saturday, September 05 from 08:00 PM to 11:00 PM"
     ]
   },
   {
@@ -42,213 +32,198 @@
     "secondaryEmoji": "🎱",
     "description": "Join us for blood-pumping games of ping pong or Gatas (AKA Crud, a much-loved MIT student pastime) right in the center of our first floor lobby! Fuel your fun with all-you-can-drink from 2^20 different milkshake combos in our enormous dessert bar! Thick, creamy, and wonderfully caloric! Available every night! Options available for all dietary restrictions",
     "dates": [
-      "Saturday, August 30 from 08:00 PM to 12:00 AM",
-      "Sunday, August 31 from 08:00 PM to 12:00 AM",
-      "Monday, September 01 from 08:00 PM to 12:00 AM",
-      "Tuesday, September 02 from 08:00 PM to 12:00 AM",
-      "Wednesday, September 03 from 08:00 PM to 12:00 AM",
-      "Thursday, September 04 from 08:00 PM to 11:00 PM",
-      "Friday, September 05 from 08:00 PM to 12:00 AM"
+      "Saturday, September 05 from 08:00 PM to 12:00 AM",
+      "Sunday, September 06 from 08:00 PM to 12:00 AM",
+      "Monday, September 07 from 08:00 PM to 12:00 AM",
+      "Tuesday, September 08 from 08:00 PM to 12:00 AM",
+      "Wednesday, September 09 from 08:00 PM to 12:00 AM",
+      "Thursday, September 10 from 08:00 PM to 12:00 AM",
+      "Friday, September 11 from 08:00 PM to 12:00 AM"
     ]
   },
   {
     "emoji": "📼",
-    "name": "Watching YouTube on an Actual 4-Story Screen",
+    "name": "Doomscrolling on an Actual 4-Story Screen",
     "secondaryEmoji": "📽️",
     "description": "Is bigger better? Does size matter? Come find out at Beta, home to the biggest screen at MIT! Play Tetris on an actual building, watch YouTube, or broadcast other questionable animations to the whole block, you decide!",
     "dates": [
-      "Saturday, August 30 from 08:00 PM to 12:00 AM",
-      "Sunday, August 31 from 08:00 PM to 12:00 AM",
-      "Monday, September 01 from 08:00 PM to 12:00 AM",
-      "Tuesday, September 02 from 08:00 PM to 12:00 AM",
-      "Wednesday, September 03 from 08:00 PM to 12:00 AM",
-      "Thursday, September 04 from 08:00 PM to 12:00 AM",
-      "Friday, September 05 from 08:00 PM to 12:00 AM"
+      "Saturday, September 05 from 08:00 PM to 12:00 AM",
+      "Sunday, September 06 from 08:00 PM to 12:00 AM",
+      "Monday, September 07 from 08:00 PM to 12:00 AM",
+      "Tuesday, September 08 from 08:00 PM to 12:00 AM",
+      "Wednesday, September 09 from 08:00 PM to 12:00 AM",
+      "Thursday, September 10 from 08:00 PM to 12:00 AM",
+      "Friday, September 11 from 08:00 PM to 12:00 AM"
     ]
   },
   {
     "emoji": "🎮",
     "name": "Beta Video Game Night",
     "secondaryEmoji": "👾",
-    "description": "Enjoy some quality gaming time from a huge selection of games on our Switch and PS5. Challenge others to smash, stick fight, or sit back and watch the mayhem unfold in both of our TV gaming areas!",
+    "description": "Enjoy some quality gaming time from a huge selection of games on our Switch and PS5. We also have tabletop games like Risk and Zombicide! Challenge others to smash, stick fight, or sit back and watch the mayhem unfold in both of our TV gaming areas!",
     "dates": [
-      "Saturday, August 30 from 08:00 PM to 12:00 AM",
-      "Sunday, August 31 from 08:00 PM to 12:00 AM",
-      "Monday, September 01 from 08:00 PM to 12:00 AM",
-      "Tuesday, September 02 from 08:00 PM to 12:00 AM",
-      "Wednesday, September 03 from 08:00 PM to 12:00 AM",
-      "Thursday, September 04 from 08:00 PM to 12:00 AM",
-      "Friday, September 05 from 08:00 PM to 12:00 AM"
+      "Saturday, September 05 from 08:00 PM to 12:00 AM",
+      "Sunday, September 06 from 08:00 PM to 12:00 AM",
+      "Monday, September 07 from 08:00 PM to 12:00 AM",
+      "Tuesday, September 08 from 08:00 PM to 12:00 AM",
+      "Wednesday, September 09 from 08:00 PM to 12:00 AM",
+      "Thursday, September 10 from 08:00 PM to 12:00 AM",
+      "Friday, September 11 from 08:00 PM to 12:00 AM"
     ]
   },
   {
-    "emoji": "♟️",
-    "name": "Beta Tabletop Bonanza",
-    "secondaryEmoji": "🎲",
-    "description": "Do you enjoy old-fashioned, cozy, calm vibes? Whether it's a tactical game of chess, a mystical game of Magic, or a mildly infuriating game of Risk, we have a wide selection of tabletop classics for you to choose from! Whether you come with a group or not, we'll have plenty of games for you all set up in our historic library on the 2nd floor!",
+    "emoji": "🤾",
+    "name": "Morning Spikeball & Donut Holes",
+    "secondaryEmoji": "🍩",
+    "description": "🤾 SPIKEBALL & DONUT HOLES 🍩 Start your morning at Kresge Oval with some Spikeball, donut holes, and a laid-back hangout with Beta. Jump into a game, grab some food, and meet some of the brothers.",
     "dates": [
-      "Saturday, August 30 from 08:00 PM to 12:00 AM",
-      "Sunday, August 31 from 08:00 PM to 12:00 AM",
-      "Monday, September 01 from 08:00 PM to 12:00 AM",
-      "Tuesday, September 02 from 08:00 PM to 12:00 AM",
-      "Wednesday, September 03 from 08:00 PM to 12:00 AM",
-      "Thursday, September 04 from 08:00 PM to 12:00 AM",
-      "Friday, September 05 from 08:00 PM to 12:00 AM"
-    ]
-  },
-  {
-    "emoji": "🏐",
-    "name": "Chill Volleyball & Fluffy Pancakes",
-    "secondaryEmoji": "🥞",
-    "description": "How good are you at Volleyball? Bad? So-so? Good? All are welcome! Unwind by playing a casual pick-up game of volleyball. Tap in and out whenever you'd like while we're there! In between and during games (or even if volleyball doesn't interest you but food does)… Swing by Beta's Ultimate Fluffy Pancake Bar! Our \"highly reviewed\" pancake bar comes complete with plenty of delicious fillings and toppings! Start your day right :)",
-    "dates": [
-      "Sunday, August 31 from 08:00 AM to 11:00 AM",
-      "Monday, September 01 from 08:00 AM to 11:00 AM",
-      "Tuesday, September 02 from 08:00 AM to 11:00 AM"
+      "Sunday, September 06 from 10:00 AM to 11:00 AM",
+      "Monday, September 07 from 11:00 AM to 12:00 PM",
+      "Tuesday, September 08 from 11:00 AM to 12:00 PM"
     ]
   },
   {
     "emoji": "🍔",
     "name": "All You Can Eat American Grill & Stir Fry",
     "secondaryEmoji": "🥩",
-    "description": "Feast on endless possibilities at FiRE+iCE, a beloved MIT hotspot! Dive into an AYCE American grill and stir-fry buffet where you create your experience. Whether you crave a smoky BBQ flavor or a zesty stir-fry, you can mix, match, and craft your culinary masterpiece! Options available for all dietary restrictions.",
+    "description": "🔥 FIRE + ICE 🧊 Feast on endless possibilities at FiRE+iCE, a beloved MIT hotspot! Dive into an AYCE American grill and stir-fry buffet where you create your experience. Whether you crave a smoky BBQ flavor or a zesty stir-fry, you can mix, match, and craft your culinary masterpiece! Options available for all dietary restrictions.",
     "dates": [
-      "Sunday, August 31 from 12:00 PM to 02:30 PM"
+      "Sunday, September 06 from 11:30 AM to 01:30 PM"
     ]
   },
   {
     "emoji": "🪖",
-    "name": "High-Octane Paintball Warfare… + Grill ",
+    "name": "Paintball Warfare Showdown",
     "secondaryEmoji": "🔫",
-    "description": "You've just been drafted into war, and the ongoing campaign, Operation Beta Thunder, involves lots of taking cover, taking aim and taking paint! This will get messy! If you’ve ever wanted to shoot frat bros (but not lethally of course…) this is your chance! If the action is ever too much, or perhaps you get the wind knocked out of you, enjoy a warm freshly-made burger or hotdog from our life-saving, comforting mobile grill!",
+    "description": "🎯 PAINTBALL 🔫 You've just been drafted into war, and the ongoing campaign, Operation Beta Thunder. If you’ve ever wanted to shoot frat bros (but not lethally of course…) this is your chance! We’ll split into teams, play a bunch of rounds, talk some trash, and find out who can actually aim and who’s been training with the Stormtroopers.",
     "dates": [
-      "Sunday, August 31 from 03:00 PM to 07:30 PM"
+      "Sunday, September 06 from 02:00 PM to 06:00 PM"
     ]
   },
   {
-    "emoji": "❄️",
-    "name": "Beta's Dry Ice Creamery",
-    "secondaryEmoji": "🍦",
-    "description": "Craving a late-night sweet treat? Do you need to have it made just right? Not to fret! Welcome to Beta's Dry Ice Creamery, where you can concoct your exact favorite ice cream flavor, and flash freeze it right before your very eyes with our not-so-secret ingredient: dry ice! Enjoy!",
+    "emoji": "🍜",
+    "name": "Late-Night Chinatown Meal",
+    "secondaryEmoji": "🥡",
+    "description": "🥟 CHINATOWN 🧋 Still hungry? So are we! Head into Chinatown with Beta and eat your way around the neighborhood. Grab some dumplings, noodles, boba, and whatever else looks good, then hang out and explore with the brothers.",
     "dates": [
-      "Sunday, August 31 from 08:00 PM to 11:00 PM"
+      "Sunday, September 06 from 07:30 PM to 11:00 PM"
     ]
   },
   {
     "emoji": "🍣",
-    "name": "All You Can Eat Sushi and Copley Square Tour",
+    "name": "All You Can Eat Sushi Buffet",
     "secondaryEmoji": "🥢",
-    "description": "Join us at Boston's go-to sushi buffet restaurant! Fresh and flavorful sushi with over 40 different rolls to choose from along with a variety of other food options and sides. Personally, their chicken katsu is high-key fire. Walk your hearty meal off by exploring Copley Square, a historic cathedral-filled town square in the heart of Back Bay, and the Boston Public Library, a gilded, grand portal to a time of old. Options available for all dietary restrictions.",
+    "description": "🍣 YAMATO II 🍣 Come out with Beta for all-you-can-eat sushi at Yamato II. Order way too many rolls, try something new, and hang out with the brothers over an endless stream of sushi. 🍱",
     "dates": [
-      "Monday, September 01 from 12:00 PM to 02:30 PM"
+      "Monday, September 07 from 12:30 PM to 02:00 PM"
     ]
   },
   {
-    "emoji": "🐵",
-    "name": "High-Altitude Extreme Ropes Course",
-    "secondaryEmoji": "🌲",
-    "description": "Embark on a high-altitude extreme ropes adventure course where you'll conquer swaying bridges, thrilling zip lines, and challenging rope crossings while suspended high above tree canopies. It's an adrenaline-packed journey of daring feats and unforgettable triumphs in the heart of breathtaking mountain terrain.",
+    "emoji": "🎮",
+    "name": "Real-Life Video Game Arena (Level 99)",
+    "secondaryEmoji": "🕹️",
+    "description": "🎮 LEVEL 99 🧩 Come out with Beta to Level 99 and take on a bunch of ridiculous challenges with a team. Race through rooms, solve puzzles, climb stuff, and compete your way through as many challenges as you can. 😤",
     "dates": [
-      "Monday, September 01 from 03:00 PM to 07:30 PM"
+      "Monday, September 07 from 03:00 PM to 07:00 PM"
     ]
   },
   {
-    "emoji": "🧨",
-    "name": "Build Your Own Battle Bots",
-    "secondaryEmoji": "🤖",
-    "description": "Filled with righteous rage that your advisor won't let you sign up for 13 classes? Channel your inner engineer (and anger) and step into the Battle Bots arena! We're offering all the tools and guidance you need to construct your very own personalized battle bots for a thrilling tournament-style showdown with a surprise prize! Tour our state-of-the-art makerspace while you're at it! Plus, you could always just come for the delicious milkshakes!",
+    "emoji": "⚙️",
+    "name": "Build Your Own Bluetooth Speaker",
+    "secondaryEmoji": "🔊",
+    "description": "🔊 DIY SPEAKERS 🛠️ Come build your own working speaker with Beta and make it your own. We’ll have everything you need to put it together, customize it, and actually take it home when you’re done. No experience needed, just show up and build something cool.",
     "dates": [
-      "Monday, September 01 from 08:00 PM to 11:00 PM"
+      "Monday, September 07 from 07:30 PM to 10:00 PM"
     ]
   },
   {
     "emoji": "🍝",
     "name": "Eat Big in Little Italy",
     "secondaryEmoji": "🦐",
-    "description": "Explore Boston's most historic district while feasting on some of the best cuisine the city has to offer. From mind-boggling cannolis to Italian-grade pizza, we can guarantee that no one will leave hungry.",
+    "description": "🍝 EAT BIG IN LITTLE ITALY 🦐 Head into Boston’s North End with Beta and explore Little Italy. Grab some pasta, pastries, gelato, or whatever catches your eye, and hang out with the brothers while we make our way around the neighborhood. 🍨",
     "dates": [
-      "Tuesday, September 02 from 12:00 PM to 02:30 PM"
+      "Tuesday, September 08 from 12:30 PM to 03:00 PM"
     ]
   },
   {
     "emoji": "🛶",
     "name": "Canoeing Up the Charles River",
     "secondaryEmoji": "🌊",
-    "description": "Feel the wind in your hair and the waves rushing beneath you as you take in gorgeous natural views. Challenge others to a race, splash them in the face, but be sure not to displace (the water beneath you, capsizing you)! Between us, this will probably be in the top 3 coolest things you do in your time at MIT!",
+    "description": "🛶 CANOEING UP THE CHARLES WITH BETA 🌊 Get out on the Charles with Beta for an afternoon of canoeing and kayaking. Paddle around, enjoy the view, and hang out with the brothers out on the water.",
     "dates": [
-      "Tuesday, September 02 from 03:00 PM to 07:30 PM"
+      "Tuesday, September 08 from 03:00 PM to 07:00 PM"
     ]
   },
   {
-    "emoji": "🎨",
-    "name": "Therapeutic Clay Scuplting Workshop",
-    "secondaryEmoji": "🏺",
-    "description": "Here at Beta, we do genuinely care about your mental health. That's why we're hunkering down and relaxing with modeling clay! Mold it to your delight, sculpt it, handle it, whatever you need to relieve the stress of the day. Learn about balancing class with life. All to calming music and a milkshake or two!",
+    "emoji": "🍕",
+    "name": "Build Your Own Pizzas & Donuts",
+    "secondaryEmoji": "🍩",
+    "description": "🍕 MAKE YOUR OWN PIZZA & DONUTS 🍩 Come hang out with Beta and make your own personal pizza from scratch. Load it up however you want, throw it in the oven, then finish things off by making and decorating donuts with the brothers.",
     "dates": [
-      "Tuesday, September 02 from 08:00 PM to 11:00 PM"
+      "Tuesday, September 08 from 08:00 PM to 11:00 PM"
     ]
   },
   {
-    "emoji": "🗡️",
-    "name": "DIY Swords and Balisongs",
-    "secondaryEmoji": "🔧",
-    "description": "Tap into MIT's maker spirit by assembling your own Balisong (Butterfly Knife) Fidget Toy and Lasercut Sword! Practice spinning tricks to go home and show off, or challenge others to a katana duel! Hang out and chat with students interested in 'maker' stuff at MIT. Before you go, take a tour of our state-of-the-art makerspace/engineering workshop!",
+    "emoji": "🎤",
+    "name": "MIT Lecture Hall Karaoke Pizza Party",
+    "secondaryEmoji": "🍕",
+    "description": "🎤 LECTURE HALL KARAOKE PIZZA PARTY 🎶 Had a long FDOC? Grab the mic and come sing with Beta at our Klassroom Karaoke Pizza Party. Pick your song, get your friends up there with you, and spend the night yelling your favorite songs with the brothers.",
     "dates": [
-      "Wednesday, September 03 from 05:00 PM to 08:00 PM"
+      "Wednesday, September 09 from 05:00 PM to 06:30 PM"
     ]
   },
   {
     "emoji": "🌭",
-    "name": "Glizzy Speed Eating Challenge",
-    "secondaryEmoji": "⏰",
-    "description": "One question. One minute. One chance… How many dogs can you down?",
+    "name": "Glizzy Guzzling Gauntlet",
+    "secondaryEmoji": "🌭",
+    "description": "🌭 GLIZZY GUZZLING GAUNTLET 🌭 Think you can put down some hot dogs? Come to Beta for the Glizzy Guzzling Gauntlet and go head-to-head with the brothers in a full-on hot dog eating contest. Bring an appetite, bring some confidence, and see how far you make it.",
     "dates": [
-      "Wednesday, September 03 from 08:00 PM to 11:00 PM"
+      "Wednesday, September 09 from 07:00 PM to 09:00 PM"
     ]
   },
   {
-    "emoji": "🧩",
-    "name": "High-IQ Escape Room Night",
-    "secondaryEmoji": "🕵️‍♂️",
-    "description": "So you've got into MIT, you don't need to prove to yourself that you're smart… but of course you're gonna try. Or even if you're not insecure, join us for an evening of grueling puzzles, codebreaking, teamwork, and escaping!",
+    "emoji": "🍦",
+    "name": "Froyo, Burritos, & Taco Bowl Food Crawl",
+    "secondaryEmoji": "🌯",
+    "description": "🌯 472 + EL JEFE’S 🌯 Start the night hanging out with Beta at Cafe 472 for some froyo, then head over to El Jefe’s for some late-night Mexican food. Good people, good food, and an easy way to end the night.",
     "dates": [
-      "Thursday, September 04 from 05:00 PM to 08:00 PM"
+      "Thursday, September 10 from 05:00 PM to 08:00 PM"
     ]
   },
   {
-    "emoji": "🕹️",
-    "name": "Smash For Prizes",
-    "secondaryEmoji": "🎁",
-    "description": "Eat-and-greet Beta brothers in a definitely-not-button-mashing filled tournament and win from a selection of wonderfully useful or eclectic prizes fit for someone beginning their MIT career! PSA: Accept the inevitable harsh truth that you will lose to Colin '26.",
+    "emoji": "🎨",
+    "name": "Bob Ross and Charcuterie Night",
+    "secondaryEmoji": "🧀",
+    "description": "🎨 BOB ROSS & CHARCUTERIE 🧀 Come paint with Beta while following along with a Bob Ross tutorial and snacking on a full charcuterie spread. No painting experience needed, just grab a brush, make some happy little trees, and hang out with the brothers.",
     "dates": [
-      "Thursday, September 04 from 08:00 PM to 11:00 PM"
+      "Thursday, September 10 from 08:00 PM to 11:00 PM"
     ]
   },
   {
     "emoji": "🧗",
-    "name": "Beta Bro Bouldering and Climbing Night",
+    "name": "Bouldering & Climbing Night with Beta",
     "secondaryEmoji": "🪨",
-    "description": "Test your (grip) strength and mental fortitude by joining Beta brothers in rock climbing. The gym's just down the road from the house! Whether you're a total beginner or a pro, join us to learn, practice, watch, and enjoy this Beta-beloved sport!",
+    "description": "🧗 BOULDERING WITH BETA 🧗 Come bouldering with Beta and spend the afternoon climbing with the brothers. Whether you’ve been climbing for years or have never touched a wall, hop on some routes, try something new, and hang out between climbs.",
     "dates": [
-      "Friday, September 05 from 05:00 PM to 08:00 PM"
+      "Friday, September 11 from 05:00 PM to 08:00 PM"
     ]
   },
   {
-    "emoji": "⚙️",
-    "name": "DIY Bluetooth Speakers",
-    "secondaryEmoji": "🔊",
-    "description": "Tap into MIT's maker spirit by assembling your own Bluetooth Speaker! Whether you'll use it to annoy everyone at the beach with your Reggaeton, or bump classical music for a hardcore study sesh, we guarantee that you'll leave with a useful piece of tech and priceless knowledge!",
+    "emoji": "🔥",
+    "name": "Beta Grill & Chill",
+    "secondaryEmoji": "🍔",
+    "description": "Take a break from building and get a tour of our historic 5 story brownstone mansion featuring a beautiful library study space, fully stocked industrial kitchen, eletrical engineering and mechanical engineering machine shops, and newly renovated basement lounge/game room while feasting on delicious hamburgers fresh off the grill. Stop by for a burger, a quick chat, and chill vibes! Options available for all dietary restrictions.",
     "dates": [
-      "Friday, September 05 from 08:00 PM to 11:00 PM"
+      "Friday, September 11 from 08:00 PM to 12:00 AM"
     ]
   },
   {
-    "emoji": "⛳",
-    "name": "Top Golf with Beta [Invite Only]",
-    "secondaryEmoji": "🏌️",
-    "description": "Decompress from your first week of classes by whacking balls with metal sticks, enjoying a complementary meal, and enjoying quality time with the Beta bros. Whether you're a pro firing projectiles into the stratosphere, or a first timer getting into the swing of things, it'll be chill!",
+    "emoji": "🎳",
+    "name": "Kings Bowling (Invite Only)",
+    "secondaryEmoji": "🎳",
+    "description": "🎳 KINGS BOWLING (INVITE ONLY) 🎳 Join Beta for a night of bowling, food, and hanging out at Kings. Grab a lane, talk some trash, and spend the night with the brothers. Invite Only Event",
     "dates": [
-      "Saturday, September 06 from 02:00 PM to 06:00 PM"
+      "Saturday, September 12 from 04:00 PM to 07:00 PM"
     ]
   }
 ]
