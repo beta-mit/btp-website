@@ -221,7 +221,7 @@ export default function BrothersPage() {
 
   // Brothers by class year. Grad students stay in the database with listed: false.
   // Set listed to true on a record to show that brother again.
-  const isListed = (brother: { listed?: boolean }) => brother.listed !== false
+  const isListed = (brother: { classYear: string; listed?: boolean }) => brother.listed !== false
   const brothersByClass = {
     2026: Object.values(brothersDatabase).filter(brother => brother.classYear === "2026" && isListed(brother)),
     2027: Object.values(brothersDatabase).filter(brother => brother.classYear === "2027" && isListed(brother)),
