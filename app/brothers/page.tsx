@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 
 export default function BrothersPage() {
@@ -16,7 +15,7 @@ export default function BrothersPage() {
     },
     "Jermy Scarpetta": {
       name: "Jermy Scarpetta",
-      major: "Mechanical Engineering (Course 2)",
+      major: "Mechanical Engineering",
       classYear: "2028",
       image: "/brothers/jermy_junior.png",
       position: "VP Internal"
@@ -30,14 +29,14 @@ export default function BrothersPage() {
     },
     "Jordan Tran": {
       name: "Jordan Tran",
-      major: "Aeronautics and Astronautics (Course 16)",
+      major: "Aeronautics and Astronautics",
       classYear: "2029",
       image: "/brothers/jordan_sophomore.png",
       position: "VP Finance"
     },
     "Raul Campos": {
       name: "Raul Campos",
-      major: "Computer Science and Engineering (Course 6-3)",
+      major: "Computer Science and Engineering",
       classYear: "2027",
       image: "/shared/placeholder.svg",
       position: undefined
@@ -51,14 +50,14 @@ export default function BrothersPage() {
     },
     "Carlos Shum": {
       name: "Carlos Shum",
-      major: "Mathematics with Computer Science (Course 18C)",
+      major: "Mathematics with Computer Science",
       classYear: "2029",
       image: "/brothers/carlos_sophomore.png",
       position: "Brotherhood Chair"
     },
     "Enrique Hernandez": {
       name: "Enrique Hernandez",
-      major: "Aeronautics and Astronautics (Course 16)",
+      major: "Aeronautics and Astronautics",
       classYear: "2027",
       image: "/brothers/enrique_senior.png",
       position: undefined
@@ -72,21 +71,21 @@ export default function BrothersPage() {
     },
     "Isaiah Villarreal": {
       name: "Isaiah Villarreal",
-      major: "Aeronautics and Astronautics (Course 16)",
+      major: "Aeronautics and Astronautics",
       classYear: "2027",
       image: "/brothers/isaiah_senior.png",
       position: "VP Member Education"
     },
     "Jayden Lin": {
       name: "Jayden Lin",
-      major: "Aeronautics and Astronautics (Course 16)",
+      major: "Aeronautics and Astronautics",
       classYear: "2029",
       image: "/brothers/jayden_sophomore.png",
       position: "VP Programming"
     },
     "Felipe Shimamura": {
       name: "Felipe Shimamura",
-      major: "Mathematics with Computer Science (Course 18C)",
+      major: "Mathematics with Computer Science",
       classYear: "2029",
       image: "/brothers/felipe_sophomore.png",
       position: undefined
@@ -107,14 +106,14 @@ export default function BrothersPage() {
     },
     "Rohan Dalal": {
       name: "Rohan Dalal",
-      major: "Electrical Engineering and Computer Science (Course 6-2)",
+      major: "Electrical Engineering and Computer Science",
       classYear: "2029",
       image: "/brothers/rohan_sophomore.png",
       position: undefined
     },
     "Alberto Mora Trinidad": {
       name: "Alberto Mora Trinidad",
-      major: "Computation and Cognition (Course 6-9)",
+      major: "Computation and Cognition",
       classYear: "2027",
       image: "/shared/placeholder.svg",
       position: undefined
@@ -128,14 +127,14 @@ export default function BrothersPage() {
      },
     "Isaac Sheard": {
       name: "Isaac Sheard",
-      major: "Aeronautics and Astronautics (Course 16)",
+      major: "Aeronautics and Astronautics",
       classYear: "2028",
       image: "/brothers/isaac_junior.png",
       position: "Co-VP Recruitment"
     },
     "Jeanpaul Sanchez-Moreno": {
       name: "Jeanpaul Sanchez-Moreno",
-      major: "Mechanical Engineering (Course 2-A)",
+      major: "Mechanical Engineering",
       classYear: "2028",
       image: "/brothers/jp_junior.png",
       position: ["VP External", "VP Brotherhood"]
@@ -181,14 +180,14 @@ export default function BrothersPage() {
      },
      "Angelo Farfan": {
        name: "Angelo Farfan",
-       major: "Mathematics (Course 18); Artificial Intelligence and Decision Making (Course 6-4)",
+       major: "Mathematics; Artificial Intelligence and Decision Making",
        classYear: "2028",
        image: "/brothers/angelo_junior.png",
        position: ["Co-VP House Management", "VP Communications"]
      },
      "Matthew Estevez": {
        name: "Matthew Estevez",
-       major: "Computer Science and Engineering (Course 6-3)",
+       major: "Computer Science and Engineering",
        classYear: "2028",
        image: "/brothers/matthew_junior.png",
        position: "Co-VP House Management"
@@ -259,14 +258,11 @@ export default function BrothersPage() {
                 key={member.name}
                 className="w-48"
               >
-                <div className="relative h-48 mb-4">
-                  <Image
-                    src={member.image || "/shared/placeholder.svg"}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <img
+                  src={member.image || "/shared/placeholder.svg"}
+                  alt={member.name}
+                  className="mb-4 w-full h-auto"
+                />
                 <div className="flex flex-col">
                   <div className="min-h-6 mb-2 flex flex-col items-start gap-1">
                     {(Array.isArray(member.position) ? member.position : member.position ? [member.position] : []).map((title) => (
@@ -307,14 +303,11 @@ export default function BrothersPage() {
                   key={brother.name}
                   className="w-48"
                 >
-                  <div className="relative h-48 mb-4">
-                    <Image
-                      src={brother.image}
-                      alt={brother.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
+                  <img
+                    src={brother.image}
+                    alt={brother.name}
+                    className="mb-4 w-full h-auto"
+                  />
                   <div className="flex flex-col">
                     <h3
                       className="text-xs font-bold mb-2 text-[#002F6C] tracking-wide text-left font-sans uppercase"
