@@ -6,207 +6,227 @@ import { Badge } from "@/components/ui/badge"
 export default function BrothersPage() {
   // Brothers Database - Single source of truth
   const brothersDatabase = {
-    "Alex Meier": {
-      name: "Alex Meier",
-      major: "Aeronautics and Astronautics (Engineering); Physics (Flexible)",
-      classYear: "2026",
-      image: "/shared/placeholder.svg",
-      position: "President"
-    },
     "Michael Serrano": {
       name: "Michael Serrano",
       major: "Physics; Computer Science, Economics, and Data Science",
       classYear: "2026",
-      image: "/shared/placeholder.svg",
-      position: "VP External"
+      image: "/brothers/michael_grad.png",
+      position: undefined,
+      listed: false
     },
-    "William Nolan": {
-      name: "William Nolan",
-      major: "Physics",
-      classYear: "2026",
-      image: "/shared/placeholder.svg",
+    "Jermy Scarpetta": {
+      name: "Jermy Scarpetta",
+      major: "Mechanical Engineering (Course 2)",
+      classYear: "2028",
+      image: "/brothers/jermy_junior.png",
       position: "VP Internal"
     },
     "Johnny Peng": {
       name: "Johnny Peng",
       major: "Mechanical Engineering",
       classYear: "2028",
-      image: "/shared/placeholder.svg",
+      image: "/brothers/johnny_junior.png",
+      position: undefined
+    },
+    "Jordan Tran": {
+      name: "Jordan Tran",
+      major: "Aeronautics and Astronautics (Course 16)",
+      classYear: "2029",
+      image: "/brothers/jordan_sophomore.png",
       position: "VP Finance"
     },
     "Raul Campos": {
       name: "Raul Campos",
-      major: "Artificial Intelligence and Decision Making; Electrical Engineering and Computer Science",
+      major: "Computer Science and Engineering (Course 6-3)",
       classYear: "2027",
       image: "/shared/placeholder.svg",
-      position: "VP House Management"
+      position: undefined
     },
     "Carlos Lopez": {
       name: "Carlos Lopez",
       major: "Mechanical Engineering with Concentration in Controls, Instrumentation, and Robotics",
       classYear: "2028",
-      image: "/shared/placeholder.svg",
-      position: "VP Brotherhood"
+      image: "/brothers/carlos_junior.png",
+      position: "Co-VP Recruitment"
+    },
+    "Carlos Shum": {
+      name: "Carlos Shum",
+      major: "Mathematics with Computer Science (Course 18C)",
+      classYear: "2029",
+      image: "/brothers/carlos_sophomore.png",
+      position: "Brotherhood Chair"
     },
     "Enrique Hernandez": {
       name: "Enrique Hernandez",
-      major: "Aeronautics and Astronautics",
+      major: "Aeronautics and Astronautics (Course 16)",
       classYear: "2027",
-      image: "/shared/placeholder.svg",
-      position: "VP Communications"
+      image: "/brothers/enrique_senior.png",
+      position: undefined
     },
     "Matvey Borodin": {
       name: "Matvey Borodin",
       major: "Electrical Engineering and Computer Science; Mathematics",
       classYear: "2028",
-      image: "/shared/placeholder.svg",
+      image: "/brothers/matvey_junior.png",
+      position: "President"
+    },
+    "Isaiah Villarreal": {
+      name: "Isaiah Villarreal",
+      major: "Aeronautics and Astronautics (Course 16)",
+      classYear: "2027",
+      image: "/brothers/isaiah_senior.png",
       position: "VP Member Education"
+    },
+    "Jayden Lin": {
+      name: "Jayden Lin",
+      major: "Aeronautics and Astronautics (Course 16)",
+      classYear: "2029",
+      image: "/brothers/jayden_sophomore.png",
+      position: "VP Programming"
+    },
+    "Felipe Shimamura": {
+      name: "Felipe Shimamura",
+      major: "Mathematics with Computer Science (Course 18C)",
+      classYear: "2029",
+      image: "/brothers/felipe_sophomore.png",
+      position: undefined
+    },
+    "Henry Dang": {
+      name: "Henry Dang",
+      major: "Mechanical Engineering",
+      classYear: "2029",
+      image: "/brothers/henry_sophomore.png",
+      position: undefined
+    },
+    "Ishan Nahian": {
+      name: "Ishan Nahian",
+      major: "Nuclear Science and Engineering",
+      classYear: "2029",
+      image: "/brothers/ishan_sophomore.png",
+      position: undefined
+    },
+    "Rohan Dalal": {
+      name: "Rohan Dalal",
+      major: "Electrical Engineering and Computer Science (Course 6-2)",
+      classYear: "2029",
+      image: "/brothers/rohan_sophomore.png",
+      position: undefined
     },
     "Alberto Mora Trinidad": {
       name: "Alberto Mora Trinidad",
-      major: "Chemistry and Biology",
+      major: "Computation and Cognition (Course 6-9)",
       classYear: "2027",
       image: "/shared/placeholder.svg",
-      position: "VP Programming"
+      position: undefined
     },
         "Amir Alsad": {
        name: "Amir Alsad",
        major: "Physics (Flexible)",
        classYear: "2028",
-       image: "/brothers/amir.JPEG",
-       position: "Co-VP Recruitment"
-     },
-    "Jeanpaul Sanchez-Moreno": {
-      name: "Jeanpaul Sanchez-Moreno",
-      major: "Mechanical Engineering",
-      classYear: "2028",
-      image: "/shared/placeholder.svg",
-      position: "Co-VP Recruitment"
-    },
-         // Non-executive brothers
-     "Xander Backus": {
-       name: "Xander Backus",
-       major: "Artificial Intelligence and Decision Making; Mathematics",
-       classYear: "2026",
-       image: "/shared/placeholder.svg",
+       image: "/brothers/amir_junior.png",
        position: undefined
      },
+    "Isaac Sheard": {
+      name: "Isaac Sheard",
+      major: "Aeronautics and Astronautics (Course 16)",
+      classYear: "2028",
+      image: "/brothers/isaac_junior.png",
+      position: "Co-VP Recruitment"
+    },
+    "Jeanpaul Sanchez-Moreno": {
+      name: "Jeanpaul Sanchez-Moreno",
+      major: "Mechanical Engineering (Course 2-A)",
+      classYear: "2028",
+      image: "/brothers/jp_junior.png",
+      position: ["VP External", "VP Brotherhood"]
+    },
+         // Non-executive brothers
      "Luis Turino Zellek": {
        name: "Luis Turino Zellek",
        major: "Electrical Engineering and Computer Science; Mathematics",
        classYear: "2026",
-       image: "/shared/placeholder.svg",
-       position: undefined
-     },
-     "Vishruth Konakanchi": {
-       name: "Vishruth Konakanchi",
-       major: "Computer Science and Engineering",
-       classYear: "2026",
-       image: "/shared/placeholder.svg",
-       position: undefined
+       image: "/brothers/luis_grad.png",
+       position: undefined,
+       listed: false
      },
      "Colin Clark": {
        name: "Colin Clark",
        major: "Electrical Science and Engineering; Physics (Flexible)",
        classYear: "2026",
-       image: "/shared/placeholder.svg",
-       position: undefined
+       image: "/brothers/colin_grad.png",
+       position: undefined,
+       listed: false
      },
      "Tom Nguyen": {
        name: "Tom Nguyen",
        major: "Mechanical Engineering with Concentration in Controls, Instrumentation, and Robotics",
        classYear: "2026",
-       image: "/shared/placeholder.svg",
-       position: undefined
+       image: "/brothers/tom_grad.png",
+       position: undefined,
+       listed: false
      },
      "Ryan Duarte": {
        name: "Ryan Duarte",
        major: "Mechanical Engineering",
        classYear: "2027",
-       image: "/shared/placeholder.svg",
-       position: undefined
-     },
-     "Max Misterka": {
-       name: "Max Misterka",
-       major: "Mathematics with Computer Science; Chemistry or Physics",
-       classYear: "2027",
-       image: "/shared/placeholder.svg",
+       image: "/brothers/ryan_senior.png",
        position: undefined
      },
      "Michael Georgievski": {
        name: "Michael Georgievski",
        major: "Physics; Computer Science and Engineering; Mathematics",
        classYear: "2027",
-       image: "/shared/placeholder.svg",
-       position: undefined
-     },
-     "Asa Paparo": {
-       name: "Asa Paparo",
-       major: "Computer Science and Engineering",
-       classYear: "2028",
-       image: "/shared/placeholder.svg",
+       image: "/brothers/mikeg_senior.png",
        position: undefined
      },
      "Angelo Farfan": {
        name: "Angelo Farfan",
-       major: "Mathematics; Artificial Intelligence and Decision Making",
+       major: "Mathematics (Course 18); Artificial Intelligence and Decision Making (Course 6-4)",
        classYear: "2028",
-       image: "/shared/placeholder.svg",
-       position: undefined
+       image: "/brothers/angelo_junior.png",
+       position: ["Co-VP House Management", "VP Communications"]
      },
-     "Guy Gong": {
-       name: "Guy Gong",
-       major: "Mechanical Engineering",
+     "Matthew Estevez": {
+       name: "Matthew Estevez",
+       major: "Computer Science and Engineering (Course 6-3)",
        classYear: "2028",
-       image: "/shared/placeholder.svg",
-       position: undefined
+       image: "/brothers/matthew_junior.png",
+       position: "Co-VP House Management"
      },
      "Yrwin Batan": {
        name: "Yrwin Batan",
        major: "Computer Science, Economics, and Data Science",
        classYear: "2028",
-       image: "/shared/placeholder.svg",
+       image: "/brothers/yrwin_junior.png",
        position: undefined
      },
-     "Jasper Lee": {
-       name: "Jasper Lee",
-       major: "Mechanical Engineering; Physics",
-       classYear: "2028",
-       image: "/shared/placeholder.svg",
-       position: undefined
-     },
-     "Tristan Hoang": {
-       name: "Tristan Hoang",
-       major: "Political Science",
-       classYear: "2028",
-       image: "/shared/placeholder.svg",
-       position: undefined
-     }
   }
 
   // Executive Board in order
   const executiveBoardOrder = [
-    "Alex Meier",
-    "Michael Serrano",
-    "William Nolan",
-    "Johnny Peng",
-    "Raul Campos",
-    "Carlos Lopez",
-    "Enrique Hernandez",
     "Matvey Borodin",
-    "Alberto Mora Trinidad",
-    "Amir Alsad",
-    "Jeanpaul Sanchez-Moreno"
+    "Jeanpaul Sanchez-Moreno",
+    "Jermy Scarpetta",
+    "Jordan Tran",
+    "Angelo Farfan",
+    "Matthew Estevez",
+    "Carlos Shum",
+    "Isaiah Villarreal",
+    "Jayden Lin",
+    "Carlos Lopez",
+    "Isaac Sheard"
   ]
 
   const executiveBoard = executiveBoardOrder.map(name => brothersDatabase[name as keyof typeof brothersDatabase])
 
-  // Brothers by class year
+  // Brothers by class year. Grad students stay in the database with listed: false.
+  // Set listed to true on a record to show that brother again.
+  const isListed = (brother: { listed?: boolean }) => brother.listed !== false
   const brothersByClass = {
-    2026: Object.values(brothersDatabase).filter(brother => brother.classYear === "2026"),
-    2027: Object.values(brothersDatabase).filter(brother => brother.classYear === "2027"),
-    2028: Object.values(brothersDatabase).filter(brother => brother.classYear === "2028"),
-    2029: []
+    2026: Object.values(brothersDatabase).filter(brother => brother.classYear === "2026" && isListed(brother)),
+    2027: Object.values(brothersDatabase).filter(brother => brother.classYear === "2027" && isListed(brother)),
+    2028: Object.values(brothersDatabase).filter(brother => brother.classYear === "2028" && isListed(brother)),
+    2029: Object.values(brothersDatabase).filter(brother => brother.classYear === "2029" && isListed(brother))
   }
 
   return (
@@ -229,7 +249,7 @@ export default function BrothersPage() {
             <h2
               className="text-3xl md:text-4xl font-normal text-[#002F6C] tracking-wider font-serif"
             >
-              2025 EXECUTIVE BOARD
+              2026 EXECUTIVE BOARD
             </h2>
           </div>
 
@@ -248,8 +268,10 @@ export default function BrothersPage() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <div className="h-6 mb-2">
-                    {member.position && <Badge className="bg-[#002F6C] text-white text-xs">{member.position}</Badge>}
+                  <div className="min-h-6 mb-2 flex flex-col items-start gap-1">
+                    {(Array.isArray(member.position) ? member.position : member.position ? [member.position] : []).map((title) => (
+                      <Badge key={title} className="bg-[#002F6C] text-white text-xs whitespace-normal">{title}</Badge>
+                    ))}
                   </div>
                   <h3
                     className="text-xs font-bold mb-1 text-[#002F6C] tracking-wide text-left font-sans uppercase"
@@ -268,6 +290,7 @@ export default function BrothersPage() {
 
       {/* Brothers by Class Year */}
       {Object.entries(brothersByClass).map(([classYear, brothers]) => (
+        brothers.length > 0 ? (
         <section key={classYear} className="py-16 px-6 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
@@ -278,48 +301,36 @@ export default function BrothersPage() {
               </h2>
             </div>
 
-            {brothers.length > 0 ? (
-              <div className="flex flex-wrap justify-center gap-6">
-                {brothers.map((brother) => (
-                  <div
-                    key={brother.name}
-                    className="w-48"
-                  >
-                    <div className="relative h-48 mb-4">
-                      <Image
-                        src={brother.image}
-                        alt={brother.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <h3
-                        className="text-xs font-bold mb-2 text-[#002F6C] tracking-wide text-left font-sans uppercase"
-                      >
-                        {brother.name.toUpperCase()}
-                      </h3>
-                      <span className="text-xs leading-relaxed text-gray-600 italic text-left font-body">
-                        {brother.major}
-                      </span>
-                    </div>
+            <div className="flex flex-wrap justify-center gap-6">
+              {brothers.map((brother) => (
+                <div
+                  key={brother.name}
+                  className="w-48"
+                >
+                  <div className="relative h-48 mb-4">
+                    <Image
+                      src={brother.image}
+                      alt={brother.name}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                ))}
-              </div>
-            ) : (
-              <div className="text-center text-gray-500">
-                <p className="text-lg font-body">
-                  <a
-                    href="/rush"
-                    className="text-[#002F6C] hover:text-[#69B3E7] underline transition-colors duration-200"
-                  >
-                    Interested? Rush us.
-                  </a>
-                </p>
-              </div>
-            )}
+                  <div className="flex flex-col">
+                    <h3
+                      className="text-xs font-bold mb-2 text-[#002F6C] tracking-wide text-left font-sans uppercase"
+                    >
+                      {brother.name.toUpperCase()}
+                    </h3>
+                    <span className="text-xs leading-relaxed text-gray-600 italic text-left font-body">
+                      {brother.major}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
+        ) : null
       ))}
     </div>
   )

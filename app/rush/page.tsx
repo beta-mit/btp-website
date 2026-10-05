@@ -74,6 +74,9 @@ export default function RushPage() {
             >
               FALL RUSH
             </h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto font-body leading-relaxed">
+              Morning Spikeball and Donut Holes is at Kresge Oval. The MIT Lecture Hall Karaoke Pizza Party is in 1-190. All other events are at the Beta Theta Pi house.
+            </p>
           </div>
 
           {/* Google Calendar Embed */}
@@ -129,7 +132,7 @@ export default function RushPage() {
               SPRING RUSH
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto font-body leading-relaxed">
-              Currently unavailable for 2026 Spring. Check back soon. :)
+              Spring rush will happen in 2027. There is no schedule yet. Check back soon.
             </p>
           </div>
         </div>
@@ -149,6 +152,7 @@ export default function RushPage() {
             Reach out.
             <br/><br/>Co-VPs of Recruitment: Carlos Lopez and Isaac Sheard
             <br/>Email: beta-rush@mit.edu
+            <br/>For questions and rides: (617) 715-2762
           </p>
         </div>
       </section>

@@ -134,7 +134,7 @@ export default function HousingPage() {
             className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto font-body"
           >
             Reach out.
-            <br/><br/>Housing Manager: Raul Campos
+            <br/><br/>Co-House Managers: Angelo Farfan and Matthew Estevez
             <br/>Email: beta-housemanager@mit.edu
           </p>
         </div>
